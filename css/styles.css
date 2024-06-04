@@ -1,6 +1,32 @@
 
+/*
+    Paleta:
+     #bc9960 
+    #354048 
+    #674f3e 
+    #43332e 
+    #333c3b
+     #cecfd0 
+    #546167 
+
+
+*/
+
+
+
+
 *{
     margin: 0;
     padding: 0;
     background-color: #191919;
+}
+
+p{
+    font-size: 3.5rem;
+    color:blue;
+}
+
+h1{
+    color: red;
+    font-size: 3.5rem;
 }
