@@ -1,3 +1,2 @@
-Hola, soy sebastian :D
-
-Realizar el footer centrado, y definir paleta de colores
+Sebastian:
+Actualmente trabajando en section carousel y section cards mis productos.
