@@ -12,21 +12,21 @@
 
 */
 
-
-
-
+/*Valores default*/
 *{
     margin: 0;
     padding: 0;
-    background-color: lightblue;
+    background-color: #333c3b;
 }
+
+
+
+
+h1, h2, h3, h5{
+    color: white;
+}
+
 
 p{
-    font-size: 3.5rem;
-    color:blue;
-}
-
-h1{
-    color: red;
-    font-size: 3.5rem;
+    color: white;
 }
