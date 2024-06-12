@@ -4,30 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <link rel="icon" type="image/ico" href="./img/favicon.ico">
 
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <!-- Icono -->
+    <link rel="icon" type="image/ico" href="./img/favicon.ico">
+    <!-- Titulo de la Web -->
     <title>Cofee Shop</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav>
-            <button class="buttonNav" onclick="location.href='index.html'">Home</button>
-            <button class="buttonNav" onclick="location.href='about.html'">Acerca de</button>
-            <button class="buttonNav" onclick="location.href='contact.html'">Contacto</button>
-            <button class="buttonNav" onclick="location.href='viajes.html'">A donde viajamos</button>
-
-
-            <h1 style="text-align: center;">Acompañanos en la aventura del café</h1>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><span class="material-symbols-outlined">close</span></a></li>
+                <li><a href="#">Example</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+    
+            <ul>
+                <li><a href="#">Example</a></li>
+                <li class="hideOnMobile"><a href="#">Blog</a></li>
+                <li class="hideOnMobile"><a href="#">Products</a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="#">Forum</a></li>
+                <li class="hideOnMobile"><a href="#">Login</a></li>
+                <li class="menu-button" onclick="showSidebar()"><span class="material-symbols-outlined">menu</span></li>
+            </ul>
         </nav>
+       
     </header>
     <main>
         <br><br><br><br><br><br><br><br><br><br>
@@ -36,23 +49,13 @@
             <div>
                 <p>I love coffee (body->main->section->div)</p>
             </div>
-            
+
         </section>
 
- <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
         <section>
             <div>
                 <h1>Ejemplo paleta de colores</h1>
-                <!--
-                            Paleta:
-                            #bc9960 
-                            #354048 
-                            #674f3e 
-                            #43332e 
-                            #333c3b
-                            #cecfd0 
-                            #546167 
-                -->
                 <p style="color:#bc9960;">Ejemplo-bc9960</p>
                 <p style="color:#354048;">Ejemplo-354048</p>
                 <p style="color:#674f3e;">Ejemplo-674f3e</p>
@@ -70,11 +73,11 @@
         <br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br><br><br>
         <div>
-            
+
             <p>Footer</p>
         </div>
     </footer>
-
+    <script src="js/data.js"></script>
 </body>
 
 </html>
