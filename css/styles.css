@@ -30,6 +30,14 @@ header {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+footer{
+    background-color: var(--color_marron_fuerte);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+}
+
 nav {
     background-color: var(--color_marron_fuerte);
     box-shadow: 5px 5px 18px rgba(0, 0, 0, .8);
@@ -115,6 +123,7 @@ nav li:first-child {
     margin-right: 10px;
     display: none;
 }
+
 
 /* Reemplazo de Js */
 input[type="checkbox"] {
