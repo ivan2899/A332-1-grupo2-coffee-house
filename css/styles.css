@@ -40,7 +40,8 @@ p{
 /*El responsive de las cards esta directamente en el bootstrap que figura en el html, indica cuantas columnas segun tamanio*/
 .card {
     height: 100%;
-
+    display: flex;
+    flex-direction: column;
   }
 
 .card-img-top {
@@ -52,6 +53,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
   }
 
 .card-title{
