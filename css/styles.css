@@ -22,6 +22,7 @@
 
 
 /*no hacer etiquetas generales con estilo, modificar.*/
+/*
 h1, h2, h3, h5{
     color: white;
 }
@@ -29,31 +30,44 @@ h1, h2, h3, h5{
 
 p{
     color: white;
-}
+}*/
 
 
 
 
 
 
-/*Estilos para que las img se adapten a las cards y no desborden*/
-/*El responsive de las cards esta directamente en el bootstrap que figura en el html, indica cuantas columnas segun tamanio*/
+/*Estilos cards, html contiene estilo en linea*/
 .card {
     height: 100%;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 
+  .card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
 .card-img-top {
-    height: 300px;/*  height: 200px; este height hay que hacerlo responsive con media-querys */
-    object-fit: cover;  /*creo que lo ideal es utilizar este contain, hay que conseguir que las imagenes tengan la misma resolucion o lo mas parecida*/
+    height: 300px;
+    object-fit: cover;  
+    transition: transform 0.3s ease-in-out;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 
 .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
+    height: 100px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   background-color: #bc9960;
   }
 
 .card-title{
@@ -62,6 +76,8 @@ p{
  text-align: left;
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  font-size: 1.2em;
+ background-color: #bc9960;
+ transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .card-text{
@@ -69,37 +85,103 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.8em;
     font-style: italic;
+    background-color: #bc9960;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 
 
+.btn-primary{
+    
+    background-color: #333c3b;
+    border: none;
+}
+
+.btn-hover {
+    opacity: 0;
+    position:  relative;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+    background-color: #cecfd0;
+   
+    padding: 5px 1px;
+    font-weight: bold;
+    border: none;
+
+    
+}
+
+
+.card:hover .btn-hover,
+.card-img-top:hover ~ .card-body .btn-hover {
+    opacity: 1;
+    bottom: 10px;
+   
+    background-color: #cecfd0;
+    animation: pulse 1s normal; 
+}
 
 
 
-/*Titulo principal*/
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: translateX(-50%) scale(1);
+    }
+    50% {
+        transform: translateX(-50%) scale(1.05);
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+/****************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Section headers*/
 .header-principal{
     text-align: center;
     padding-bottom: 10px;
+    position: relative;
+    color: white;
 }
 
-
-/*Header mis productos*/
 .productos-header {
     text-align: center;
     margin: 30px 0;
+    padding: 20px;
+    
+}
+
+.productos-header h2 {
+
+    border-bottom: 5px solid #cecfd0 ;
+
+    font-size: 1.8em; 
     font-weight: bold;
-    color: whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #cecfd0;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    letter-spacing: 1pxs; 
+    position: relative;
 }
 
-
-.productos-header h1 {
-    font-size: 3em;
-}
-
-.productos-header h3 {
-    font-size: 1.2em;
-}
+/****************************************/
 
 
 
@@ -107,18 +189,22 @@ p{
 
 
 
-
-/*Estilos carousel, img y texto*/
+/*Estilos carousel*/
 .carousel-inner img{
     object-fit: cover;
     width: 100%;
-    max-height: 800px; /*default*/
+    max-height: 800px; 
 }
 
 .carousel-caption {
     background-color: transparent; 
     padding: 10px; 
     border-radius: 5px; 
+
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    text-align: center;
 }
 
 .carousel-caption h5,
@@ -126,6 +212,16 @@ p{
     background-color: transparent;
     color: white; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.carousel-caption h5 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+   
+.carousel-caption p {
+    font-size: 1.2em; /
 }
 
 
@@ -134,11 +230,15 @@ p{
     background-color: transparent;
 }
 
-/*
-.carousel-item{
-    height: 100%;
-    float:none;
-}*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; 
+    width: 4em;
+    height: 4em;
+}
+   
+/****************************************/
 
 
 
@@ -186,7 +286,21 @@ p{
         font-size: 1.2em;
     }
 
+    .carousel-caption {
+        top: 50%; 
+        transform: translateY(-10%);
+       
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2em;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8em;
+    }
+
 }
 
-
+/****************************************/
 
