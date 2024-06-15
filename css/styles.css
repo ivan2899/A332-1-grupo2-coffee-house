@@ -124,6 +124,13 @@ nav li:first-child {
     display: none;
 }
 
+.logo-li{
+    font-family: "Playwrite NL", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
 
 /* Reemplazo de Js */
 input[type="checkbox"] {
