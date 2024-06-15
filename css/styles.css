@@ -21,7 +21,7 @@ body {
     font-size: 20px;
 }
 
-header {
+.header {
     position: sticky;
     top: 25px;
     margin: 0 15px;
@@ -30,7 +30,7 @@ header {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-footer{
+footer {
     background-color: var(--color_marron_fuerte);
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@ footer{
     color: #f0f0f0;
 }
 
-nav {
+.nav-sup {
     background-color: var(--color_marron_fuerte);
     box-shadow: 5px 5px 18px rgba(0, 0, 0, .8);
     border-radius: 50px;
@@ -52,11 +52,11 @@ nav ul {
     align-items: center;
 }
 
-nav li {
+.nav-sup li {
     height: 50px;
 }
 
-nav a {
+.nav-sup a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -65,13 +65,13 @@ nav a {
     color: var(--color_letras);
 }
 
-nav a:hover {
+.nav-sup a:hover {
     background-color: #f0f0f0;
     border-radius: 50px;
     color: #000;
 }
 
-nav li:first-child {
+.nav-sup li:first-child {
     margin-right: auto;
 }
 
@@ -117,6 +117,7 @@ nav li:first-child {
 .material-symbols-outlined {
     margin-top: 13px;
     font-variation-settings: 'wght' 600;
+    cursor: pointer;
 }
 
 .menu-button {
@@ -124,24 +125,22 @@ nav li:first-child {
     display: none;
 }
 
-.logo-li{
+.logo-li {
+    max-width: 100%;
+    overflow: hidden;
     font-family: "Playwrite NL", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400px;
-  font-style: normal;
+    font-style: normal;
 }
 
-
-/* Reemplazo de Js */
-input[type="checkbox"] {
+.checkbox-menu{
     display: none;
 }
-
-input[type="checkbox"]:checked~nav .sidebar {
+/* Reemplazo de Js */
+input[type="checkbox"]:checked + .nav-sup .sidebar {
     display: flex;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1110px) {
     .hideOnMobile {
         display: none;
 
@@ -149,10 +148,6 @@ input[type="checkbox"]:checked~nav .sidebar {
 
     .menu-button {
         display: block;
-    }
-
-    .icono-menu{
-        cursor: pointer;
     }
 }
 

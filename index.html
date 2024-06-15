@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@200&display=swap" rel="stylesheet">
 
     <!-- Hoja de Estilos -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
@@ -27,12 +27,12 @@
 
 <body>
     <header class="header">
-        <input type="checkbox" id="menu-toggle">
+        <input type="checkbox" id="menu-toggle" class="checkbox-menu">
         <nav class="nav-sup">
 
-            <!-- Nav Celu  ||  ancho < 800px-->
+            <!-- Nav Celu  ||  ancho < 1110px -->
             <ul class="sidebar">
-                <li><label for="menu-toggle"><span class="material-symbols-outlined">close</span></label></li>
+                <li class="menu-close"><label for="menu-toggle"><span class="material-symbols-outlined">close</span></label></li>
                 <li><a href="#">Nuestros productos</a></li>
                 <li><a href="#calidad">¿Por qué elegirnos?</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -40,10 +40,10 @@
                 <li><a href="./pages/login.html">Iniciar sesión</a></li>
             </ul>
 
-            <!-- Nav Pc  ||  ancho > 800px-->
+            <!-- Nav Pc  ||  ancho > 1110px-->
             <ul class="pcbar">
                 <li class="logo-li"><a href="#" id="logo-nav-sup"><img class="img-empresa" src="img/logoEmpresa.png"
-                            alt="">La casa del café</a></li>
+                            alt="">LaCasadelCafé</a></li>
                 <li class="hideOnMobile "><a href="#productos">Nuestros productos</a></li>
                 <div class="separador hideOnMobile"></div>
                 <li class="hideOnMobile"><a href="#calidad">¿Por qué elegirnos?</a></li>
@@ -54,7 +54,7 @@
                 <div class="separador hideOnMobile"></div>
                 <li class="hideOnMobile"><a href="./pages/login.html">Iniciar sesión</a></li>
                 <li class="menu-button"><label for="menu-toggle"><span
-                            class="material-symbols-outlined icono-menu">menu</span></label></li>
+                            class="material-symbols-outlined">menu</span></label></li>
             </ul>
         </nav>
     </header>
