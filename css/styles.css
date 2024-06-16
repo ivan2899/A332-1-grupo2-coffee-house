@@ -45,7 +45,6 @@
  color: white;
  font-weight: bold;
  text-align: left;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
  font-size: 1.2em;
  background-color: #bc9960;
  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -53,7 +52,6 @@
 
 .card-text{
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.8em;
     font-style: italic;
     background-color: #bc9960;
@@ -135,7 +133,6 @@
     font-size: 1.8em; 
     font-weight: bold;
     color: #cecfd0;
-    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
     font-style: italic;
     letter-spacing: 1pxs; 
     position: relative;
@@ -166,7 +163,6 @@
     background-color: transparent;
     color: white; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .carousel-caption h5 {
