@@ -8,8 +8,6 @@
     --color_beige: #bc9960;
 }
 
-
-
 /*Estilos cards, html contiene estilo en linea*/
 .card {
     height: 100%;
@@ -96,8 +94,6 @@
     animation: pulse 1s normal; 
 }
 
-
-
 /* Pulse Animation */
 @keyframes pulse {
     0% {
@@ -113,25 +109,16 @@
 
 /****************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Section headers*/
 .header-principal{
     text-align: center;
     padding-bottom: 10px;
     position: relative;
     color: white;
+}
+
+.productos-header2{
+    height: 100px;
 }
 
 .productos-header {
@@ -155,12 +142,6 @@
 }
 
 /****************************************/
-
-
-
-
-
-
 
 /*Estilos carousel*/
 .carousel-inner img{
@@ -213,25 +194,6 @@
    
 /****************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Responsive, viewport handler*/
 
 /*tablets, Ipads*/
@@ -277,26 +239,6 @@
 
 /****************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Reset de estilos */
 * {
     margin: 0;
@@ -314,7 +256,7 @@ body {
 .header {
     position: sticky;
     top: 25px;
-    margin: 0 15px;
+    margin: 0 15px 25px 0;
     z-index: 1000;
     border-radius: 22px;
     background-color: rgba(255, 255, 255, 0.3);
