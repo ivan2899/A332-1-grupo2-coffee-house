@@ -5,6 +5,7 @@
     --altura_header: 60px;
     --color_separador: #7c7b7ba1;
     --color_separador_slidebar: #0a0a0a;
+    --color_beige: #bc9960;
 }
 
 /*Estilos cards, html contiene estilo en linea*/
@@ -16,19 +17,20 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
-
+  
   .card:hover {
     transform: translateY(-10px); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-}
+  }
 
 .card-img-top {
     height: 300px;
-    object-fit: cover;  
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
+  
 
 .card-body {
     display: flex;
@@ -58,8 +60,6 @@
     background-color: #bc9960;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-
-
 
 .btn-primary{
     
@@ -261,14 +261,6 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-footer {
-    background-color: var(--color_marron_fuerte);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #f0f0f0;
-}
-
 .nav-sup {
     background-color: var(--color_marron_fuerte);
     box-shadow: 5px 5px 18px rgba(0, 0, 0, .8);
@@ -356,7 +348,7 @@ nav ul {
     display: none;
 }
 
-.grid-container-footer{
+.grid-container-footer {
     width: 100%;
     height: 90%;
     display: grid;
@@ -368,13 +360,14 @@ nav ul {
     gap: 50 px;
 }
 
-.grid-container-footer > div {
+.grid-container-footer>div {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
     height: 200px;
     width: 250px;
 }
+
 .logo-li {
     max-width: 100%;
     overflow: hidden;
@@ -385,6 +378,7 @@ nav ul {
 .checkbox-menu{
     display: none;
 }
+
 /* Reemplazo de Js */
 input[type="checkbox"]:checked + .nav-sup .sidebar {
     display: flex;
