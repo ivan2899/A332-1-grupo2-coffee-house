@@ -202,7 +202,7 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
 
 .card-text {
     color: white;
-    font-size: 0.8em;
+    font-size: 1em;
     font-style: italic;
     background-color: #bc9960;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -342,9 +342,9 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
 
 
 
+
+
 /* ====== Estilos Testimonios ====== */
-
-
 
 .testimonio{
     background-color: #333c3b;
@@ -386,9 +386,7 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     font-family: Arial;
 }
 
-/* ====== Fin estilos testimonios ====== */
-
-
+/* ====== Fin Estilos Testimonios ====== */
 
 /* ====== Fin Contenido Principal ====== */
 
@@ -562,7 +560,7 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     }
 
     .carousel-caption p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .sidebar {

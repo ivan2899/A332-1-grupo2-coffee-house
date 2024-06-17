@@ -1,9 +1,12 @@
-Sebastian:
-Actualmente trabajando en section carousel y section cards mis productos.
-
-
-
-
 https://www.pexels.com/search/coffee%20beans/
 fotos carousel
 https://www.pexels.com/search/coffee%20beans/
+
+pag plantilla venta
+https://github.com/roberto-aq
+
+Js
+poner el form del login en una ventana modal
+
+
+hacer una forma de que subamos una foto o algo y se de de alta un producto
