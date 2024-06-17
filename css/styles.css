@@ -562,3 +562,11 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.testimonios.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1em;
+    flex-wrap: wrap;
+}
