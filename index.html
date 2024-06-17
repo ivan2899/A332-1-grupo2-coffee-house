@@ -38,10 +38,12 @@
 
       <!-- Nav Celu  ||  ancho < 1110px -->
       <ul class="sidebar">
-        <li class="menu-close"><label for="menu-toggle"><span class="material-symbols-outlined close">close</span></label>
+        <li class="menu-close"><label for="menu-toggle"><span
+              class="material-symbols-outlined close">close</span></label>
         </li>
         <li><a href="#productos">Nuestros productos</a></li>
-        <li><a href="#calidad">¿Por qué elegirnos?</a></li>
+        <!-- <li><a href="#calidad">¿Por qué elegirnos?</a></li>  -->
+        <li><a href="#testimonios">Testimonios</a></li>
         <li><a href="#redes">Redes</a></li>
         <li><a href="./pages/login.html">Iniciar sesión</a></li>
       </ul>
@@ -53,12 +55,16 @@
         <div class="separador hideOnMobile"></div>
         <li class="hideOnMobile "><a href="#productos">Nuestros productos</a></li>
         <div class="separador hideOnMobile"></div>
-        <li class="hideOnMobile"><a href="#calidad">¿Por qué elegirnos?</a></li>
+        <!-- 
+        <li><a href="#calidad">¿Por qué elegirnos?</a></li> 
+        <div class="separador hideOnMobile"></div> -->
+        <li class="hideOnMobile"><a href="#testimonios">Testimonios</a></li>
         <div class="separador hideOnMobile"></div>
         <li class="hideOnMobile"><a href="#redes">Redes</a></li>
         <div class="separador hideOnMobile"></div>
         <li class="hideOnMobile"><a href="./pages/login.html">Iniciar sesión</a></li>
-        <li class="menu-button"><label for="menu-toggle"><span class="material-symbols-outlined menu">menu</span></label>
+        <li class="menu-button"><label for="menu-toggle"><span
+              class="material-symbols-outlined menu">menu</span></label>
         </li>
       </ul>
     </nav>
@@ -213,34 +219,42 @@
 
     <section id="testimonios">
       <div class="testimonios-header"></div>
-      <div class="testimonios-header1 text-center mb-5"><h2>Testimonios</h2></div>
+      <div class="testimonios-header1 text-center mb-5">
+        <h2>Testimonios</h2>
+      </div>
 
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-4 mb-4">
             <div class="testimonio card h-100 text-center ">
-              <img src="./img/usuarioTestimonio1.jpg" class="card-img-top rounded mx-auto position-relative" alt="testimonio1">
+              <img src="./img/usuarioTestimonio1.jpg" class="card-img-top rounded mx-auto position-relative"
+                alt="testimonio1">
               <span class="icon ">👍</span>
               <div class="card-text testimonio-text">
-                <p>Desde el momento en que el aroma del café recién hecho llega a mi nariz, hasta el primer sorbo que acaricia mi paladar, cada taza es una experiencia única y reconfortante. Recomiendo!! 💯💯</p>
-              </div>
-            </div>
-          </div> 
-          <div class="col-md-4 mb-4">
-            <div class="testimonio card h-100 text-center ">
-              <img src="./img/usuarioTestimonio2.jpg" class="card-img-top rounded mx-auto position-relative" alt="testimonio2">
-              <span class="icon ">⭐</span>
-              <div class="card-text testimonio-text">
-                <p>Cada sorbo de este café es un viaje a la tierra de la felicidad. ¡Una experiencia que no solo despierta mis sentidos, sino tambien mi alma!🤯☕☕</p>
+                <p>Desde el momento en que el aroma del café recién hecho llega a mi nariz, hasta el primer sorbo que
+                  acaricia mi paladar, cada taza es una experiencia única y reconfortante. Recomiendo!! 💯💯</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="testimonio card h-100 text-center ">
-              <img src="./img/usuarioTestimonio3.jpg" class="card-img-top rounded mx-auto position-relative" alt="testimonio3">
+              <img src="./img/usuarioTestimonio2.jpg" class="card-img-top rounded mx-auto position-relative"
+                alt="testimonio2">
+              <span class="icon ">⭐</span>
+              <div class="card-text testimonio-text">
+                <p>Cada sorbo de este café es un viaje a la tierra de la felicidad. ¡Una experiencia que no solo
+                  despierta mis sentidos, sino tambien mi alma!🤯☕☕</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="testimonio card h-100 text-center ">
+              <img src="./img/usuarioTestimonio3.jpg" class="card-img-top rounded mx-auto position-relative"
+                alt="testimonio3">
               <span class="icon ">👍</span>
               <div class="card-text testimonio-text">
-                <p>Desde rescatarme de la cama por las mañanas hasta mantenerme despierto en reuniones de oficina interminables, el café es mi fiel compañero. ¡compra café y sé el héroe de tu historia mantutina!</p>
+                <p>Desde rescatarme de la cama por las mañanas hasta mantenerme despierto en reuniones de oficina
+                  interminables, el café es mi fiel compañero. ¡compra café y sé el héroe de tu historia mantutina!</p>
               </div>
             </div>
           </div>
@@ -272,12 +286,11 @@
           <dl>
             <dt><a href="./pages/register.html">Registro</a></dt>
           </dl>
-
         </div>
       </div>
-      <div class="col">
+      <div id="redes" class="col">
         <h2>REDES</h2>
-        <div id="redes" class="redes">
+        <div class="redes">
           <dl>
             <dt><a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i> Instagram</a>
             </dt>
@@ -291,8 +304,7 @@
       <div class="col">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3281.6987517694256!2d-58.3692112!3d-34.6623101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3334e1e773297%3A0x38b223e10c24ff93!2sUniversidad%20Tecnol%C3%B3gica%20Nacional%3A%20Facultad%20Regional%20Avellaneda!5e0!3m2!1ses-419!2sar!4v1718417520002!5m2!1ses-419!2sar"
-          class="maps" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          class="maps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 

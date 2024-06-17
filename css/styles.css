@@ -273,17 +273,17 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
 }
 
 
-.testimonios-header{
+.testimonios-header {
     height: 100px;
 }
 
-.testimonios-header1{
+.testimonios-header1 {
     text-align: center;
     margin: 50px 2;
     padding: 20px;
 }
 
-.testimonios-header1 h2{
+.testimonios-header1 h2 {
     border-bottom: 5px solid #cecfd0;
     font-size: 1.8em;
     font-weight: bold;
@@ -346,7 +346,7 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
 
 /* ====== Estilos Testimonios ====== */
 
-.testimonio{
+.testimonio {
     background-color: #333c3b;
     border-radius: 10px;
     padding: 1em;
@@ -354,25 +354,25 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     position: relative;
 }
 
-.testimonio:hover{
+.testimonio:hover {
     transform: translateY(1px);
     box-shadow: 0 8px 16px rgba(29, 24, 24, 0.2);
 }
 
-.testimonio img{
+.testimonio img {
     width: 170px;
     height: 170px;
     object-fit: cover;
 }
 
-.icon{
+.icon {
     position: relative;
     bottom: 30px;
     right: -80px;
     font-size: 1.5em;
 }
 
-.testimonio-text{
+.testimonio-text {
     background-color: #43332e;
     border-radius: 55px;
     padding: 1em;
@@ -381,7 +381,7 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     text-align: left;
 }
 
-.testimonio-text p{
+.testimonio-text p {
     margin: 0;
     font-family: Arial;
 }
@@ -496,6 +496,7 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
         transform: translateX(-50%) scale(1);
     }
 }
+
 /* ====== Fin Animaciones ====== */
 
 
@@ -570,6 +571,3 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
 }
 
 /* ====== Fin Responsive ====== */
-
-
-
