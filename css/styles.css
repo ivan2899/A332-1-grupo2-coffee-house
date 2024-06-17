@@ -501,3 +501,24 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
 }
 
 /* ====== Fin Responsive ====== */
+
+
+.testimonios-header{
+    height: 100px;
+}
+
+.testimonios-header1{
+    text-align: center;
+    margin: 50px 2;
+    padding: 20px;
+}
+
+.testimonios-header1 h2{
+    border-bottom: 5px solid #cecfd0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #cecfd0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    position: relative;
+}
