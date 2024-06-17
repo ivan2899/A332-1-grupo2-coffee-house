@@ -1,3 +1,3 @@
-# Coffee Shop
+# Coffee house
 
 ## Funcionamiento:
