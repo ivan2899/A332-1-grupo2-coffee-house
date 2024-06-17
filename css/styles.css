@@ -272,6 +272,27 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     position: relative;
 }
 
+
+.testimonios-header{
+    height: 100px;
+}
+
+.testimonios-header1{
+    text-align: center;
+    margin: 50px 2;
+    padding: 20px;
+}
+
+.testimonios-header1 h2{
+    border-bottom: 5px solid #cecfd0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #cecfd0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    position: relative;
+}
+
 /****************************************/
 
 /*Estilos carousel*/
@@ -318,6 +339,56 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     width: 4em;
     height: 4em;
 }
+
+
+
+/* ====== Estilos Testimonios ====== */
+
+
+
+.testimonio{
+    background-color: #333c3b;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.testimonio:hover{
+    transform: translateY(1px);
+    box-shadow: 0 8px 16px rgba(29, 24, 24, 0.2);
+}
+
+.testimonio img{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.icon{
+    position: relative;
+    bottom: 30px;
+    right: -80px;
+    font-size: 1.5em;
+}
+
+.testimonio-text{
+    background-color: #43332e;
+    border-radius: 55px;
+    padding: 1em;
+    position: relative;
+    color: #f0f0f0;
+    text-align: left;
+}
+
+.testimonio-text p{
+    margin: 0;
+    font-family: Arial;
+}
+
+/* ====== Fin estilos testimonios ====== */
+
+
 
 /* ====== Fin Contenido Principal ====== */
 
@@ -503,70 +574,4 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
 /* ====== Fin Responsive ====== */
 
 
-.testimonios-header{
-    height: 100px;
-}
 
-.testimonios-header1{
-    text-align: center;
-    margin: 50px 2;
-    padding: 20px;
-}
-
-.testimonios-header1 h2{
-    border-bottom: 5px solid #cecfd0;
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #cecfd0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    position: relative;
-}
-
-.testimonio{
-    background-color: #333c3b;
-    border-radius: 10px;
-    padding: 1em;
-    margin-bottom: 1em;
-    position: relative;
-}
-
-.testimonio:hover{
-    transform: translateY(1px);
-    box-shadow: 0 8px 16px rgba(29, 24, 24, 0.2);
-}
-
-.testimonio img{
-    width: 170px;
-    height: 170px;
-    object-fit: cover;
-}
-
-.icon{
-    position: relative;
-    bottom: 30px;
-    right: -80px;
-    font-size: 1.5em;
-}
-
-.testimonio-text{
-    background-color: #43332e;
-    border-radius: 55px;
-    padding: 1em;
-    position: relative;
-    color: #f0f0f0;
-    text-align: left;
-}
-
-.testimonio-text p{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.testimonios.container{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 1em;
-    flex-wrap: wrap;
-}
