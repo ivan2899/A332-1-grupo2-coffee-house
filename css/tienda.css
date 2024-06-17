@@ -9,111 +9,19 @@
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--color_fondo);
     font-family: "Sedan SC", serif;
     font-style: normal;
     font-size: 20px;
 }
 
-/* ============= */
-/*--------------- footer --------------*/
-.footer {
-    background-color: var(--color_marron_fuerte);
-    width: 100%;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
-    color: #f0f0f0;
-    padding: 45px 0px 0px;
-    margin-top: 50px;
-}
-.grid-container-footer{
-    width: 100%;
-    display: grid;
-    padding: 45px 0px;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
-    align-content: center;
-    grid-gap: 50px;
-}
-
-.grid-container-footer > div {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.grid-container-footer .img-f{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.grid-container-footer .img-footer{
-    width: 170px;
-    max-width: 100%;
-}
-
-.footer .grid-container-footer h2{
-    color: var(--color_beige);
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.footer .grid-container-footer a{
-    text-decoration: none;
-    color: var(--color_letras);
-    transition: all 300ms ease;
-}
-
-.footer .grid-container-footer a:hover{
-    color: var(--color_beige);
-    text-decoration:underline;
-}
-.maps{
-    width: 100%;
-    height: 200px;
-    align-items: center;
-}
-
-.footer .footer-row{
-    display: block;
-    padding: 15px 10px;
-    text-align: center;
-
-}
-.footer .footer-row small{
-    font-size: 15px;
-
-}
-
-@media screen and (max-width:800px) {
-    .footer{
-        height: 100%;
-    }
-    .grid-container-footer{
-        width: 85%;
-        padding: 45px 0px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        margin: 0 auto 0 auto;
-    }
-        
-    
-}
-
-/* ============ */
-
+/* ====== Nav ====== */
 .header {
     position: sticky;
     top: 25px;
@@ -185,9 +93,10 @@ nav ul {
 .sidebar a {
     width: 100%;
     border-left: 5px solid var(--color_fondo);
-    color: #000!important;
+    color: #000 !important;
 }
-.bx{
+
+.bx {
     color: #fff;
     cursor: pointer;
 }
@@ -210,14 +119,14 @@ nav ul {
     cursor: pointer;
 }
 
-.menu-button{
+.menu-button {
     margin-top: 13px;
     color: var(--color_letras);
     margin-right: 10px;
     display: none;
 }
 
-.close{
+.close {
     color: #000;
 }
 
@@ -228,15 +137,15 @@ nav ul {
     font-style: normal;
 }
 
-.checkbox-menu{
+.checkbox-menu {
     display: none;
 }
 
-.form{
+.form {
     margin: 10px 15px;
 }
 
-.form .input-ingreso{
+.form .input-ingreso {
     position: relative;
     width: 100%;
     height: 50px;
@@ -256,11 +165,11 @@ nav ul {
     padding: 20px 45px 20px 20px;
 }
 
-.input-ingreso input::placeholder{
+.input-ingreso input::placeholder {
     color: var(--color_letras);
 }
 
-.input-ingreso i{
+.input-ingreso i {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -268,66 +177,40 @@ nav ul {
     font-size: 20px;
 }
 
-input[type="checkbox"]:checked + .nav-sup .sidebar {
+/* Reemplazo de js*/
+input[type="checkbox"]:checked+.nav-sup .sidebar {
     display: flex;
 }
+/* ====== Fin Nav ====== */
 
-@media (max-width: 1110px) {
-    .hideOnMobile {
-        display: none;
-    }
 
-    .menu-button {
-        display: block;
-    }
 
-    .input-ingreso input::placeholder {
-        color: #000;
-    }
-    
-    .input-ingreso input {
-        border: 2px solid #000;
-        color: #000;
-    }
 
-    .search{
-        color: #000;
-    }
-}
 
-@media (max-width: 400px) {
-    .sidebar {
-        margin-top: 10px;
-        width: 50%;
-    }
-}
+/* ====== Contenido Principal ====== */
 
-/* ========= */
-
+/*  TITULO DE  'COMPRAS'*/
 .container-title {
     text-align: center;
     margin: 2em;
     padding: 20px;
 }
 
-.container-title h2{
-   
-    border-bottom: 5px solid #cecfd0 ;
+.container-title h2 {
 
-    font-size: 1.8em; 
+    border-bottom: 5px solid #cecfd0;
+
+    font-size: 1.8em;
     font-weight: bold;
     color: #cecfd0;
     font-style: italic;
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
     position: relative;
     padding: 0.5em;
 }
 
 /*FILTRADO DE PRODUCTOS, FORMULARIO.*/
-
-
-.container-filter
-{
+.container-filter {
     text-align: left;
     margin: 1em auto;
     padding: 1em;
@@ -335,9 +218,9 @@ input[type="checkbox"]:checked + .nav-sup .sidebar {
     font-weight: bold;
     color: #cecfd0;
     font-style: italic;
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
     position: relative;
-   
+
 }
 
 .filter-container {
@@ -348,20 +231,23 @@ input[type="checkbox"]:checked + .nav-sup .sidebar {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .filter-header {
     text-align: center;
     margin-bottom: 20px;
     color: #495057;
 }
+
 .form-group {
     margin-bottom: 15px;
 }
 
-.form-label{
+.form-label {
     color: #495057;
 }
 
-.form-select, .form-control {
+.form-select,
+.form-control {
     background-color: #fff !important;
 }
 
@@ -378,56 +264,57 @@ input[type="checkbox"]:checked + .nav-sup .sidebar {
     border-color: #5a6268;
 }
 
-.btn:focus, .btn:active {
+.btn:focus,
+.btn:active {
     box-shadow: none;
 }
+
 /*5a6268 cecfd0*/
 
 
-
-/*Estilos cards, html contiene estilo en linea*/
+/*ESTILOS CARDS*/
 .card {
     height: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
+}
 
-  .card:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
     height: 300px;
-    object-fit: cover;  
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-  }
+}
 
 .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100px;
-   border-bottom-left-radius: 10px;
-   border-bottom-right-radius: 10px;
-   background-color: #bc9960;
-  }
-
-.card-title{
- color: white;
- font-weight: bold;
- text-align: left;
- font-size: 1.2em;
- background-color: #bc9960;
- transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #bc9960;
 }
 
-.card-text{
+.card-title {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2em;
+    background-color: #bc9960;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card-text {
     color: white;
     font-size: 0.8em;
     font-style: italic;
@@ -435,49 +322,194 @@ input[type="checkbox"]:checked + .nav-sup .sidebar {
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.btn-primary{
-    
+.btn-primary {
+
     background-color: #333c3b;
     border: none;
 }
 
 .btn-hover {
     opacity: 0;
-    position:  relative;
-    bottom: 20px; 
+    position: relative;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
     background-color: #cecfd0;
-   
+
     padding: 5px 1px;
     font-weight: bold;
     border: none;
 
-    
-}
 
+}
 
 .card:hover .btn-hover,
-.card-img-top:hover ~ .card-body .btn-hover {
+.card-img-top:hover~.card-body .btn-hover {
     opacity: 1;
     bottom: 10px;
-   
+
     background-color: #cecfd0;
-    animation: pulse 1s normal; 
+    animation: pulse 1s normal;
 }
 
-/* Pulse Animation */
+/* ====== Fin Contenido Principal ====== */
+
+
+
+
+
+/* ====== Footer ====== */
+.footer {
+    background-color: var(--color_marron_fuerte);
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+    padding: 45px 0px 0px;
+    margin-top: 50px;
+}
+
+.grid-container-footer {
+    width: 100%;
+    display: grid;
+    padding: 45px 0px;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 50px;
+}
+
+.grid-container-footer>div {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.grid-container-footer .img-f {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid-container-footer .img-footer {
+    width: 170px;
+    max-width: 100%;
+}
+
+.footer .grid-container-footer h2 {
+    color: var(--color_beige);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .grid-container-footer a {
+    text-decoration: none;
+    color: var(--color_letras);
+    transition: all 300ms ease;
+}
+
+.footer .grid-container-footer a:hover {
+    color: var(--color_beige);
+    text-decoration: underline;
+}
+
+.maps {
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    border: 0;
+}
+
+.footer .footer-row {
+    display: block;
+    padding: 15px 10px;
+    text-align: center;
+
+}
+
+.footer .footer-row small {
+    font-size: 15px;
+
+}
+
+/* ====== Fin Footer ====== */
+
+
+
+
+
+/* ====== Animaciones ====== */
+
 @keyframes pulse {
     0% {
         transform: translateX(-50%) scale(1);
     }
+
     50% {
         transform: translateX(-50%) scale(1.05);
     }
+
     100% {
         transform: translateX(-50%) scale(1);
     }
 }
 
-/****************************************/
+/* ====== Fin Animaciones ====== */
+
+
+
+
+
+/* ====== Responsive ====== */
+
+@media (max-width: 400px) {
+    .sidebar {
+        margin-top: 10px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 1110px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .input-ingreso input::placeholder {
+        color: #000;
+    }
+
+    .input-ingreso input {
+        border: 2px solid #000;
+        color: #000;
+    }
+
+    .search {
+        color: #000;
+    }
+
+    /* Responsive footer*/
+    .footer {
+        height: 100%;
+    }
+
+    .grid-container-footer {
+        width: 85%;
+        padding: 45px 0px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        margin: 0 auto 0 auto;
+    }
+}
+
+/* ====== Fin Responsive ====== */

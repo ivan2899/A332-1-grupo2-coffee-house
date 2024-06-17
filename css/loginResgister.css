@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+
+
+
+
+/* ====== Formulario Principal ====== */
 .contenido-principal{
     display: flex;
     justify-content: center;
@@ -115,3 +120,5 @@
 .label-registro p a:hover{
     text-decoration: underline
 }
+
+/* ====== Fin Formulario Principal ====== */
