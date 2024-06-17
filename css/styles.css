@@ -336,13 +336,17 @@ nav ul {
 
 .material-symbols-outlined {
     margin-top: 13px;
-    font-variation-settings: 'wght' 600;
+    font-variation-settings: 'wght' 300;
     cursor: pointer;
 }
 
 .menu-button {
     margin-right: 10px;
     display: none;
+}
+
+.menu, .close{
+    color: var(--color_letras);
 }
 
 .logo-li {
