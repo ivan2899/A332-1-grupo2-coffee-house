@@ -537,6 +537,15 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     .productos-header h3 {
         font-size: 1.8em;
     }
+
+    .carousel-caption h5 {
+        font-size: 1em;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8em;
+    }
+
 }
 
 /*mobile*/
@@ -557,11 +566,11 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     }
 
     .carousel-caption h5 {
-        font-size: 1.2em;
+        font-size: 0.8em;
     }
 
     .carousel-caption p {
-        font-size: 1em;
+        font-size: 0.6em;
     }
 
     .sidebar {
