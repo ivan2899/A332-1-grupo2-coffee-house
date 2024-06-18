@@ -249,18 +249,18 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     color: white;
 }
 
-.productos-header2 {
+.titulo-header2 {
     height: 100px;
 }
 
-.productos-header {
+.titulo-header {
     text-align: center;
     margin: 30px 0;
     padding: 20px;
 
 }
 
-.productos-header h2 {
+.titulo-header h2 {
 
     border-bottom: 5px solid #cecfd0;
 
@@ -268,30 +268,10 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     font-weight: bold;
     color: #cecfd0;
     font-style: italic;
-    letter-spacing: 1pxs;
+    letter-spacing: 1px;
     position: relative;
 }
 
-
-.testimonios-header {
-    height: 100px;
-}
-
-.testimonios-header1 {
-    text-align: center;
-    margin: 50px 2;
-    padding: 20px;
-}
-
-.testimonios-header1 h2 {
-    border-bottom: 5px solid #cecfd0;
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #cecfd0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    position: relative;
-}
 
 /****************************************/
 
