@@ -2,11 +2,19 @@ https://www.pexels.com/search/coffee%20beans/
 fotos carousel
 https://www.pexels.com/search/coffee%20beans/
 
+
 pag plantilla venta
 https://github.com/roberto-aq
 
 Js
 poner el form del login en una ventana modal
 
-
 hacer una forma de que subamos una foto o algo y se de de alta un producto
+
+Hacer que el carrousel se mueva solo
+
+Modificar la letra en el carrousel para que se vea mejor
+
+Modificar el titulo de las cards para que se diferencie de la descripcion
+
+Arreglar el background image del eleccion
