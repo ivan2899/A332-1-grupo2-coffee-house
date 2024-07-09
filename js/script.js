@@ -1,10 +1,18 @@
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'flex';
+    
+    const body = document.querySelector('body');
+    sidebar.style.right = '2px';
+    body.classList.add('no-scroll');
+    sidebar.classList.add('sidebar-show'); 
 }
 function hideSidebar() {
     const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'none';
+    
+    const body = document.querySelector('body');
+    sidebar.style.right = '-100%';
+    body.classList.remove('no-scroll');
+    sidebar.classList.remove('sidebar-show'); 
 }
 
 $('.modal').on('shown.bs.modal', function () {

@@ -9,6 +9,7 @@
     --letra_important: "Sedan SC", serif;
     --letra_contenido: "Atkinson Hyperlegible", sans-serif;
     --letra_logo: "Playwrite NL", cursive;
+    --tamanio_letra_contenido: 16px;
 }
 
 
@@ -22,7 +23,7 @@
     box-sizing: border-box;
 }
 
-body {
+html,body {
     background-color: var(--color_fondo);
     font-family: var(--letra_contenido);
     font-style: normal;
@@ -34,8 +35,15 @@ h2 {
 }
 
 
+::-webkit-scrollbar {
+    width: 7px;
+    background-color:var(--color_fondo);
+}
 
-
+::-webkit-scrollbar-thumb {
+    background-color: var(--color_letras); 
+    border-radius: 5px; 
+}
 
 /* ====== Nav ====== */
 /* Sobrescribe el estilo del modal de Bootstrap */
@@ -75,8 +83,6 @@ h2 {
 
 .no-scroll {
     overflow: hidden;
-    padding-right: 20px;
-    /* Ajustar el ancho de la barra de desplazamiento */
 }
 
 .modal-backdrop {
@@ -147,16 +153,18 @@ nav ul {
 }
 
 .sidebar {
+    display: flex;
     position: fixed;
     border-radius: 10px;
     top: 75px;
-    right: 15px;
+    right: -100%;
     width: 65%;
     background-color: rgba(103, 79, 62, 0.2);
     box-shadow: -10px 0 10px rgba(0, 0, 0, .5);
     backdrop-filter: blur(7px);
-    display: none;
+    
     flex-direction: column;
+    
 }
 
 .sidebar li {
@@ -167,6 +175,14 @@ nav ul {
     width: 100%;
     border-left: 5px solid var(--color_fondo);
 }
+.sidebar-show{
+    
+    animation-duration: 2s;
+    animation-name: sidebar;
+    animation-fill-mode: forwards; 
+}
+
+
 
 .img-empresa {
     width: 30px;
@@ -241,11 +257,11 @@ nav ul {
 .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-between;
     height: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #bc9960;
+    background-color: var(--color_beige);
 }
 
 .card-title {
@@ -253,15 +269,15 @@ nav ul {
     font-weight: bold;
     text-align: left;
     font-size: 1.2em;
-    background-color: #bc9960;
+    background-color: var(--color_beige);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .card-text {
     color: white;
-    font-size: 1em;
+    font-size: 0.8em;
     font-style: italic;
-    background-color: #bc9960;
+    background-color: var(--color_beige);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
@@ -279,7 +295,6 @@ nav ul {
     transform: translateX(-50%);
     transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
     background-color: #cecfd0;
-
     padding: 5px 1px;
     font-weight: bold;
     border: none;
@@ -289,7 +304,6 @@ nav ul {
 .card-img-top:hover~.card-body .btn-hover {
     opacity: 1;
     bottom: 10px;
-
     background-color: #cecfd0;
     animation: pulse 1s normal;
 }
@@ -371,6 +385,9 @@ nav ul {
     background-color: transparent;
     width: 4em;
     height: 4em;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 /* ====== Porque elegirnos ====== */
@@ -409,14 +426,16 @@ nav ul {
 
 .porqueelegirnosdiv h2 {
     color: var(--color_beige);
+    font-family: var(--letra_important);
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .porqueelegirnosdiv p {
     color: var(--color_letras);
+    font-family: var(--letra_contenido);
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /* ====== Fin Porque elegirnos ====== */
@@ -470,20 +489,23 @@ nav ul {
     object-fit: cover;
 }
 
-.icon {
+.div-icon {
     position: relative;
+    width: 10%;
     bottom: 30px;
-    right: -80px;
+    right: -70%;
     font-size: 1.5em;
 }
 
 .testimonio-text {
     background-color: #43332e;
-    border-radius: 55px;
+    border-radius: 7px;
     padding: 1em;
     position: relative;
-    color: #f0f0f0;
+    color: var(--color_letras);
     text-align: left;
+    font-size:var(--tamanio_letra_contenido);
+    font-family: var(--letra_contenido);
 }
 
 /* ====== Fin Estilos Testimonios ====== */
@@ -597,6 +619,15 @@ nav ul {
     }
 }
 
+@keyframes sidebar {
+    from{
+        right: -100%;
+    }
+    to{
+        right: 3px;
+    }
+}
+
 /* ====== Fin Animaciones ====== */
 
 
@@ -690,9 +721,10 @@ nav ul {
     }
 
     .sidebar {
-        margin-top: 10px;
-        width: 50%;
+        margin-top: 5px;
+        width: 90%;
     }
+
 }
 
 /* ====== Fin Responsive ====== */
