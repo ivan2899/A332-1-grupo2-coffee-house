@@ -42,7 +42,7 @@
         <li class="menu-close" onclick="hideSidebar()"><label for="menu-toggle"><span
               class="material-symbols-outlined close">close</span></label>
         </li>
-        <li><a href="#productos">Nuestros productos</a></li>
+        <li><a href="#productos">Productos destacados</a></li>
         <li><a href="#porqueelegirnos">¿Por qué elegirnos?</a></li>
         <li><a href="#redes">Redes</a></li>
         <li><a href="./pages/login.html">Iniciar sesión</a></li>
@@ -53,7 +53,7 @@
         <li class="logo-li"><a href="#" id="logo-nav-sup"><img class="img-empresa" src="img/logoEmpresa.png"
               alt="">Coffee's house</a></li>
         <div class="separador hideOnMobile"></div>
-        <li class="hideOnMobile "><a href="#productos">Nuestros productos</a></li>
+        <li class="hideOnMobile "><a href="#productos">Productos destacados</a></li>
         <div class="separador hideOnMobile"></div>
         <li class="hideOnMobile"><a href="#porqueelegirnos">¿Por qué elegirnos?</a></li>
         <div class="separador hideOnMobile"></div>
@@ -70,7 +70,7 @@
   <main>
     <section id="carousel">
       <div>
-        <div id="carouselExampleCaptions" class="carousel slide">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
@@ -80,21 +80,21 @@
               aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="4000">
               <img src="img\carousel\carousel-slide-1.jpg" class="d-block w-100" alt="Moledora de granos de café">
               <div class="carousel-caption ">
                 <h5>Coffee's house</h5>
                 <p>Tu destino para los mejores granos de café.</p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="img\carousel\Examplecarousel.webp" class="d-block w-100" alt="Taza de café">
               <div class="carousel-caption">
                 <h5>Disfrútanos en cafeterías y en tu hogar.</h5>
                 <p>Distribuimos a cafeterías y a consumidores particulares.</p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="img\carousel\example-carousel-10.jpeg" class="d-block w-100" alt="Tostado de granos de café">
               <div class="carousel-caption">
                 <h5>Granos de selección</h5>
@@ -122,7 +122,7 @@
 
       </div>
       <div class="titulo-header">
-        <h2>Nuestros Productos</h2>
+        <h2>Productos destacados</h2>
         <div class="underline">
           <div class="line"></div>
           <div class="dot"></div>
@@ -261,7 +261,7 @@
             </span>
             <div class="">
               <h2 class="">Mejor precio</h2>
-              <p class="">Los precios de nuestros productos son justos y accesibles. ¡Usted será sorprendido con mucho
+              <p class="">Los precios de nuestros son justos y accesibles. ¡Usted será sorprendido con mucho
                 gusto una vez que reciba su paquete!</p>
             </div>
           </div>
@@ -310,8 +310,9 @@
                 alt="testimonio3">
               <span class="icon ">👍</span>
               <div class="card-text testimonio-text">
-                <p>Desde rescatarme de la cama por las mañanas hasta mantenerme despierto en reuniones de oficina
-                  interminables, el café es mi fiel compañero. ¡compra café y sé el héroe de tu historia mantutina!</p>
+                <p>Lo utilizo para mantenerme despierto en reuniones de oficina
+                  interminables, el café es mi fiel compañero. Si no, estaría más perdido que pingüino en el desierto. 
+                  ¡Comprá café y mantente despierto!</p>
               </div>
             </div>
           </div>
@@ -331,9 +332,9 @@
         <div>
 
           <dl>
-            <dt><a href="#" data-toggle="modal" data-target="#miModal">¿Quiénes somos?</a></dt>
-            <dt><a href="#" data-toggle="modal" data-target="#miModal">Preguntas frecuentes</a></dt>
-            <dt><a href="#" data-toggle="modal" data-target="#miModal">¿Cómo comprar?</a></dt>
+            <dt><a href="#" data-toggle="modal" data-target="#quienesSomos">¿Quiénes somos?</a></dt>
+            <dt><a href="#" data-toggle="modal" data-target="#preguntasFrecuentes">Preguntas frecuentes</a></dt>
+            <dt><a href="#" data-toggle="modal" data-target="#comoComprar">¿Cómo comprar?</a></dt>
           </dl>
         </div>
       </div>
@@ -373,24 +374,53 @@
     </div>
   </footer>
 
-  <!-- Ventana Modal -->
-  <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="miModalLabel" aria-hidden="true">
+
+  <!-- Ventanas Modal -->
+  <div class="modal fade" id="quienesSomos" tabindex="-1" role="dialog" aria-labelledby="quienesSomosLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="miModalLabel">Título del Modal</h5>
+          <h5 class="modal-title" id="quienesSomosLabel">¿Quienes somos?</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Somos la empresa <span class="textoImportante">Coffe's House</span> , y en esta ocasión presentamos una web e-commerce que ofrece una variedad de productos relacionados a la cafetería, así como tambien tazas y más proximamente!!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="preguntasFrecuentes" tabindex="-1" role="dialog"
+    aria-labelledby="preguntasFrecuentesLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="preguntasFrecuentesLabel">Preguntas frecuentes</h5>
           <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           Contenido de la ventana modal.
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="comoComprar" tabindex="-1" role="dialog" aria-labelledby="comoComprarLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="comoComprarLabel">¿Cómo comprar?</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Para poder comprar se debe ir a los productos en la sección destacados y pulsar el botón 'comprar', o hacer click <a href="./pages/tienda.html">aquí</a></p>
         </div>
       </div>
     </div>
   </div>
+
 
   <!-- Bootstrap JS y dependencias -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -29,7 +29,7 @@ body {
     font-size: 20px;
 }
 
-h2{
+h2 {
     font-family: var(--letra_important);
 }
 
@@ -38,9 +38,66 @@ h2{
 
 
 /* ====== Nav ====== */
+/* Sobrescribe el estilo del modal de Bootstrap */
+.modal-content {
+    top: 70px;
+    background-color: var(--color_fondo);
+    color: #FFFFFF70;
+    border: 1px solid var(--color_beige);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: none;
+    /* Eliminar cualquier borde inferior del encabezado */
+}
+
+.modal-header .modal-title {
+    text-align: center;
+    width: 50%;
+    /* Ajustar el ancho del borde inferior */
+    border-bottom: 3px solid var(--color_beige);
+    /* Añadir el borde inferior */
+    color: var(--color_letras);
+}
+
+.modal-header .btn-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: #fff;
+    /* Cambiar el color del botón de cierre */
+    opacity: 1;
+}
+
+.no-scroll {
+    overflow: hidden;
+    padding-right: 20px;
+    /* Ajustar el ancho de la barra de desplazamiento */
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, .8);
+    /* Fondo oscuro semi-transparente */
+}
+
+.btn-secondary:hover {
+    background-color: #cecfd0;
+    color: #6C757D;
+}
+
+.textoImportante {
+    color: #bababa;
+    border-bottom: 1px dashed #fff;
+}
+
 .header {
     position: sticky;
     top: 25px;
+    width: 100%;
     margin: 0 15px 25px 0;
     z-index: 1000;
     border-radius: 22px;
@@ -226,8 +283,6 @@ nav ul {
     padding: 5px 1px;
     font-weight: bold;
     border: none;
-
-
 }
 
 .card:hover .btn-hover,
@@ -320,7 +375,7 @@ nav ul {
 
 /* ====== Porque elegirnos ====== */
 
-.porqueelegirnos-fondo{
+.porqueelegirnos-fondo {
     margin-top: 45px;
     padding-top: 45px;
     width: 100%;
@@ -330,34 +385,40 @@ nav ul {
     background-size: cover;
 
 }
+
 .porqueelegirnosdiv {
     position: relative;
     width: 100%;
     display: grid;
     padding: 45px 10px;
     grid-template-columns: repeat(3, 1fr);
-    
+
 }
-.porqueelegirnosdiv > div{
+
+.porqueelegirnosdiv>div {
     text-align: left;
     padding: 0px 20px;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin-bottom: 75px;
 }
-.porqueelegirnosdiv span{
+
+.porqueelegirnosdiv span {
     color: var(--color_letras);
 }
-.porqueelegirnosdiv  h2 {
+
+.porqueelegirnosdiv h2 {
     color: var(--color_beige);
     margin-bottom: 25px;
     font-size: 20px;
 }
-.porqueelegirnosdiv  p {
+
+.porqueelegirnosdiv p {
     color: var(--color_letras);
     margin-bottom: 25px;
     font-size: 20px;
 }
+
 /* ====== Fin Porque elegirnos ====== */
 
 
@@ -383,6 +444,7 @@ nav ul {
     border-radius: 50px;
     margin: 0 20px;
 }
+
 /* ====== Fin Subrayado Titulos ====== */
 
 
@@ -551,6 +613,7 @@ nav ul {
     .menu-button {
         display: block;
     }
+
     .footer {
         height: 100%;
     }
@@ -573,11 +636,13 @@ nav ul {
         margin: 0 auto 0 auto;
         grid-template-columns: repeat(1, 1fr);
     }
-    .porqueelegirnosdiv > div{
+
+    .porqueelegirnosdiv>div {
         text-align: center;
         margin-bottom: 5px;
     }
 }
+
 /*tablets, Ipads*/
 @media screen and (min-width:576px) and (max-width:799px) {
 
