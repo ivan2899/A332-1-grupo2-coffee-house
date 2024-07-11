@@ -161,7 +161,7 @@ nav ul {
 
 .nav-sup a:hover {
     background-color: #f0f0f0;
-    border-radius: 50px;
+    border-radius: 10px;
     color: #000;
 }
 
@@ -241,7 +241,7 @@ body.dark-mode .moon-icon {
 .sidebar {
     display: flex;
     position: fixed;
-    border-radius: 5px;
+    border-radius: 10px;
     top: 75px;
     right: -100%;
     width: 65%;
