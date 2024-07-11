@@ -113,7 +113,7 @@ h2 {
 .nav-sup {
     background-color: var(--color_marron_fuerte);
     box-shadow: 5px 5px 18px rgba(0, 0, 0, .8);
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 nav ul {
@@ -155,7 +155,7 @@ nav ul {
 .sidebar {
     display: flex;
     position: fixed;
-    border-radius: 10px;
+    border-radius: 5px;
     top: 75px;
     right: -100%;
     width: 65%;
