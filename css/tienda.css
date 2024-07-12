@@ -16,7 +16,7 @@
 
 body {
     background-color: var(--color_fondo);
-    font-family: "Sedan SC", serif;
+    font-family:  var(--letra_contenido);
     font-style: normal;
     font-size: 20px;
 }

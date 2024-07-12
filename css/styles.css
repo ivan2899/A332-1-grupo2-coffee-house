@@ -9,6 +9,7 @@
     --letra_important: "Sedan SC", serif;
     --letra_contenido: "Atkinson Hyperlegible", sans-serif;
     --letra_logo: "Playwrite NL", cursive;
+    --tamanio_letra_contenido: 16px;
 }
 
 
@@ -41,8 +42,15 @@ h2 {
 }
 
 
+::-webkit-scrollbar {
+    width: 7px;
+    background-color:var(--color_fondo);
+}
 
-
+::-webkit-scrollbar-thumb {
+    background-color: var(--color_letras); 
+    border-radius: 5px; 
+}
 
 /* ====== Nav ====== */
 /* Sobrescribe el estilo del modal de Bootstrap */
@@ -82,8 +90,6 @@ h2 {
 
 .no-scroll {
     overflow: hidden;
-    padding-right: 20px;
-    /* Ajustar el ancho de la barra de desplazamiento */
 }
 
 .modal-backdrop {
@@ -112,7 +118,12 @@ h2 {
 
 .nav-sup {
     background-color: #00000001;
-    border-radius: 50px;
+    border-radius: 10px;
+}
+
+.scroll{
+    background-color: var(--color_marron_fuerte);
+    box-shadow: .1rem .2rem .3rem #333;
 }
 
 .scroll{
@@ -221,16 +232,18 @@ body.dark-mode .moon-icon {
 /* ---------------  */
 
 .sidebar {
+    display: flex;
     position: fixed;
-    border-radius: 10px;
+    border-radius: 5px;
     top: 75px;
-    right: 15px;
+    right: -100%;
     width: 65%;
     background-color: rgba(103, 79, 62, 0.2);
     box-shadow: -10px 0 10px rgba(0, 0, 0, .5);
     backdrop-filter: blur(7px);
-    display: none;
+    
     flex-direction: column;
+    
 }
 
 .sidebar li {
@@ -241,6 +254,14 @@ body.dark-mode .moon-icon {
     width: 100%;
     border-left: 5px solid var(--color_fondo);
 }
+.sidebar-show{
+    
+    animation-duration: 2s;
+    animation-name: sidebar;
+    animation-fill-mode: forwards; 
+}
+
+
 
 .img-empresa {
     width: 30px;
@@ -315,11 +336,11 @@ body.dark-mode .moon-icon {
 .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-between;
     height: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #bc9960;
+    background-color: var(--color_beige);
 }
 
 .card-title {
@@ -327,15 +348,15 @@ body.dark-mode .moon-icon {
     font-weight: bold;
     text-align: left;
     font-size: 1.2em;
-    background-color: #bc9960;
+    background-color: var(--color_beige);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .card-text {
     color: var(--color_letras);
-    font-size: 1em;
+    font-size: 0.8em;
     font-style: italic;
-    background-color: #bc9960;
+    background-color: var(--color_beige);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
@@ -353,7 +374,6 @@ body.dark-mode .moon-icon {
     transform: translateX(-50%);
     transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
     background-color: #cecfd0;
-
     padding: 5px 1px;
     font-weight: bold;
     border: none;
@@ -363,7 +383,6 @@ body.dark-mode .moon-icon {
 .card-img-top:hover~.card-body .btn-hover {
     opacity: 1;
     bottom: 10px;
-
     background-color: #cecfd0;
     animation: pulse 1s normal;
 }
@@ -445,6 +464,9 @@ body.dark-mode .moon-icon {
     background-color: transparent;
     width: 4em;
     height: 4em;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 /* ====== Porque elegirnos ====== */
@@ -483,14 +505,16 @@ body.dark-mode .moon-icon {
 
 .porqueelegirnosdiv h2 {
     color: var(--color_beige);
+    font-family: var(--letra_important);
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .porqueelegirnosdiv p {
     color: var(--color_letras);
+    font-family: var(--letra_contenido);
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /* ====== Fin Porque elegirnos ====== */
@@ -544,20 +568,23 @@ body.dark-mode .moon-icon {
     object-fit: cover;
 }
 
-.icon {
+.div-icon {
     position: relative;
+    width: 10%;
     bottom: 30px;
-    right: -80px;
+    right: -70%;
     font-size: 1.5em;
 }
 
 .testimonio-text {
     background-color: var(--color_marron_fuerte);
-    border-radius: 55px;
+    border-radius: 7px;
     padding: 1em;
     position: relative;
     color: var(--color_letras);
     text-align: left;
+    font-size:var(--tamanio_letra_contenido);
+    font-family: var(--letra_contenido);
 }
 
 /* ====== Fin Estilos Testimonios ====== */
@@ -671,6 +698,15 @@ body.dark-mode .moon-icon {
     }
 }
 
+@keyframes sidebar {
+    from{
+        right: -100%;
+    }
+    to{
+        right: 3px;
+    }
+}
+
 /* ====== Fin Animaciones ====== */
 
 
@@ -764,9 +800,10 @@ body.dark-mode .moon-icon {
     }
 
     .sidebar {
-        margin-top: 10px;
-        width: 50%;
+        margin-top: 5px;
+        width: 90%;
     }
+
 }
 
 /* ====== Fin Responsive ====== */
