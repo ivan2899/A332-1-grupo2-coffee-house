@@ -18,3 +18,20 @@ Modificar la letra en el carrousel para que se vea mejor
 Modificar el titulo de las cards para que se diferencie de la descripcion
 
 Arreglar el background image del eleccion
+
+
+
+
+
+
+
+
+
+
+
+
+MARGENES A LAS CARDS EN MOVIL Y IPAD, TIPOGRAFIA Y TAMAÑO LETRA CARDS. HEADERS DE SECCCIONES Y TITULO PRINCIPAL DEBE SER MAS CONTRASTANTE, NO SE NOTA. 
+ESTETICA DE LAS CARDS, MISMO FONDO Y COLOR, PHOTOSHOP¿?. FILTRO  PRODUCTOS
+
+agregar productos, 
+1 cafe, 1 comestible, 2 mercaderia mas
