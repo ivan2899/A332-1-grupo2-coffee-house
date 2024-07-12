@@ -23,10 +23,17 @@
 }
 
 body {
+    transition: background-color 0.5s, color 0.5s;
     background-color: var(--color_fondo);
-    font-family: var(--letra_contenido);
+    font-family: var(--letra_contenido);    
     font-style: normal;
     font-size: 20px;
+}
+
+body.dark-mode {
+    --color_fondo: #ffffff9e;
+    --color_marron_fuerte: #5e4c46;
+    --color_letras: #000;
 }
 
 h2 {
@@ -95,19 +102,22 @@ h2 {
 }
 
 .header {
-    position: sticky;
-    top: 25px;
+    position: fixed;
+    top: 5px;
     width: 100%;
     margin: 0 15px 25px 0;
     z-index: 1000;
     border-radius: 22px;
-    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .nav-sup {
-    background-color: var(--color_marron_fuerte);
-    box-shadow: 5px 5px 18px rgba(0, 0, 0, .8);
+    background-color: #00000001;
     border-radius: 50px;
+}
+
+.scroll{
+    background-color: var(--color_marron_fuerte);
+    box-shadow: .1rem .2rem .3rem #333;
 }
 
 nav ul {
@@ -116,6 +126,7 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 0 !important;
 }
 
 .nav-sup li {
@@ -145,6 +156,69 @@ nav ul {
     background: none;
     color: var(--color_letras);
 }
+
+/* Mode light/dark */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    background-color: #000;
+    border: none;
+    border-radius: 34px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 34px;
+    position: relative;
+    width: 60px;
+    margin: 8px 20px;
+    padding: 0 5px;
+    transition: background-color 0.4s;
+}
+
+.icon {
+    color: #ffffff;
+    font-size: 25px !important;
+}
+
+.sun-icon {
+    display: none;
+    left: 0;
+    top: 0;
+}
+
+.moon-icon {
+    display: block;
+    left: 30px;
+    top: 0;
+}
+
+.slider {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    left: -10px;
+    position: absolute;
+    transition: transform 0.4s;
+    z-index: 1;
+}
+
+body.dark-mode .switch {
+    background-color: orange;
+}
+
+body.dark-mode .sun-icon {
+    display: block;
+}
+
+body.dark-mode .moon-icon {
+    display: none;
+}
+/* ---------------  */
 
 .sidebar {
     position: fixed;
@@ -249,7 +323,7 @@ nav ul {
 }
 
 .card-title {
-    color: white;
+    color: var(--color_letras);
     font-weight: bold;
     text-align: left;
     font-size: 1.2em;
@@ -258,7 +332,7 @@ nav ul {
 }
 
 .card-text {
-    color: white;
+    color: var(--color_letras);
     font-size: 1em;
     font-style: italic;
     background-color: #bc9960;
@@ -301,7 +375,7 @@ nav ul {
     text-align: center;
     padding-bottom: 10px;
     position: relative;
-    color: white;
+    color: var(--color_letras);
 }
 
 
@@ -319,7 +393,7 @@ nav ul {
 .titulo-header h2 {
     font-size: 1.8em;
     font-weight: bold;
-    color: #cecfd0;
+    color: var(--color_letras);
     font-style: italic;
     letter-spacing: 1px;
     position: relative;
@@ -349,7 +423,7 @@ nav ul {
 .carousel-caption h5,
 .carousel-caption p {
     background-color: transparent;
-    color: white;
+    color: var(--color_letras);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -478,11 +552,11 @@ nav ul {
 }
 
 .testimonio-text {
-    background-color: #43332e;
+    background-color: var(--color_marron_fuerte);
     border-radius: 55px;
     padding: 1em;
     position: relative;
-    color: #f0f0f0;
+    color: var(--color_letras);
     text-align: left;
 }
 
@@ -502,7 +576,7 @@ nav ul {
     height: 500px;
     justify-content: center;
     align-items: center;
-    color: #f0f0f0;
+    color: var(--color_letras);
     padding: 45px 0px 0px;
     margin-top: 50px;
 }
