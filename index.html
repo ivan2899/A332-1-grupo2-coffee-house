@@ -18,6 +18,8 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
+
 
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +37,7 @@
 
 <body>
   <header class="header">
-    <nav class="nav-sup">
+    <nav class="nav-sup" id="header">
 
       <!-- Nav Celu  ||  ancho < 1110px -->
       <ul class="sidebar">
@@ -52,6 +54,19 @@
       <ul class="pcbar">
         <li class="logo-li"><a href="#" id="logo-nav-sup"><img class="img-empresa" src="img/logoEmpresa.png"
               alt="">Coffee's house</a></li>
+
+
+        <div class="separador hideOnMobile"></div>
+        <li class="hideOnMobile ">
+          <div class="theme-switch-wrapper">
+            <a href="" id="mode-switch">Modo oscuro/claro:</a>
+            <button class="switch" id="switch">
+              <span class="icon sun-icon"><i class="fa-solid fa-sun"></i></span>
+              <span class="icon moon-icon"><i class="fa-solid fa-moon"></i></span>
+              <div class="slider"></div>
+            </button>
+          </div>
+        </li>
         <div class="separador hideOnMobile"></div>
         <li class="hideOnMobile "><a href="#productos">Productos destacados</a></li>
         <div class="separador hideOnMobile"></div>
@@ -67,7 +82,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="contenedor">
     <section id="carousel">
       <div>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -135,26 +150,6 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12 mb-4 ">
             <div class="card m-auto mt-5">
-              <img src="./img/cards/group-1/eb-espresso.jpg" class="card-img-top" alt="Earlybird Espresso">
-              <div class="card-body">
-                <h5 class="card-title">Earlybird Espresso</h5>
-                <p class="card-text">Aromas agradables y sabores intensos.</p>
-                <a href="./pages/tienda.html" class="btn btn-primary btn-hover">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4 ">
-            <div class="card m-auto mt-5">
-              <img src="./img/cards/group-1/eb-filterkaffe.jpg" class="card-img-top" alt="Earlybird Filterkaffe">
-              <div class="card-body">
-                <h5 class="card-title">Earlybird Filterkaffe</h5>
-                <p class="card-text">Clasico, para los paladares de todas las personas.</p>
-                <a href="./pages/tienda.html" class="btn btn-primary btn-hover">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4 ">
-            <div class="card m-auto mt-5">
               <img src="./img/cards/group-2/bs-blankblend.webp" class="card-img-top" alt="Blank Street">
               <div class="card-body">
                 <h5 class="card-title">Blank Street</h5>
@@ -165,32 +160,20 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-4 ">
             <div class="card m-auto mt-5">
-              <img src="./img/cards/group-2/olympia-sweetheart.jpg" class="card-img-top" alt="Olympia Sweetheart">
+              <img src="./img/cards/group-2/flora-granos.jpg" class="card-img-top" alt="flora-granos">
               <div class="card-body">
-                <h5 class="card-title">Olympia</h5>
-                <p class="card-text">Granos de Bogotá, Colombia, textura suave.</p>
-                <a href="./pages/tienda.html" class="btn btn-primary btn-hover">Comprar</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4 ">
-            <div class="card m-auto mt-5">
-              <img src="./img/cards/group-1/bc-decaf.jpg" class="card-img-top" alt="Battlecreek Decaf">
-              <div class="card-body">
-                <h5 class="card-title">Battlecreek Decaf</h5>
-                <p class="card-text">Sabores traidos de Colombia, descafeinado.</p>
+                <h5 class="card-title">Flora Alba</h5>
+                <p class="card-text">Granos de Arabia, textura suave y rica.</p>
                 <a href="./pages/tienda.html" class="btn btn-primary btn-hover">Comprar</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-4 ">
             <div class="card m-auto mt-5">
-              <img src="./img/cards/group-1/bc-houseblend.jpg" class="card-img-top" alt="Battlecreek House-Blend">
+              <img src="./img/cards/group-1/bc-houseblend.jpg" class="card-img-top" alt="Flora Alba molido">
               <div class="card-body">
-                <h5 class="card-title">Battlecreek Blend</h5>
-                <p class="card-text">Exótico, presencia de cacao y sabores cítricos.</p>
+                <h5 class="card-title">Flora Alba</h5>
+                <p class="card-text">Organico, presencia de cacao, molido.</p>
                 <a href="./pages/tienda.html" class="btn btn-primary btn-hover">Comprar</a>
               </div>
             </div>
@@ -205,16 +188,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4 ">
-            <div class="card m-auto mt-5">
-              <img src="./img/cards/group-2/cookies-white.jpg" class="card-img-top" alt="Cookies Classic">
-              <div class="card-body">
-                <h5 class="card-title">Cookies Classic</h5>
-                <p class="card-text">Galletas con chips de chocolate amargo.</p>
-                <a href="./pages/tienda.html" class="btn btn-primary btn-hover">Comprar</a>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
@@ -286,10 +260,12 @@
             <div class="testimonio card h-100 text-center ">
               <img src="./img/usuarioTestimonio1.jpg" class="card-img-top rounded mx-auto position-relative"
                 alt="testimonio1">
-              <span class="icon ">👍</span>
-              <div class="card-text testimonio-text">
-                <p>Desde el momento en que el aroma del café recién hecho llega a mi nariz, hasta el primer sorbo que
-                  acaricia mi paladar, cada taza es una experiencia única y reconfortante. Recomiendo!! 💯💯</p>
+              <div class="div-icon">
+                <span class="icon ">👍</span>
+              </div>
+              <div class="testimonio-text">
+                <p>"Desde el momento en que el aroma del café recién hecho llega a mi nariz, hasta el primer sorbo que
+                  acaricia mi paladar, cada taza es una experiencia única y reconfortante. Recomiendo!! 💯💯"</p>
               </div>
             </div>
           </div>
@@ -297,10 +273,12 @@
             <div class="testimonio card h-100 text-center ">
               <img src="./img/usuarioTestimonio2.jpg" class="card-img-top rounded mx-auto position-relative"
                 alt="testimonio2">
-              <span class="icon ">⭐</span>
-              <div class="card-text testimonio-text">
-                <p>Cada sorbo de este café es un viaje a la tierra de la felicidad. ¡Una experiencia que no solo
-                  despierta mis sentidos, sino tambien mi alma!🤯☕☕</p>
+              <div class="div-icon">
+                <span class="icon ">⭐</span>
+              </div>
+              <div class="testimonio-text">
+                <p>"Cada sorbo de este café es un viaje a la tierra de la felicidad. ¡Una experiencia que no solo
+                  despierta mis sentidos, sino tambien mi alma!🤯☕☕"</p>
               </div>
             </div>
           </div>
@@ -308,10 +286,12 @@
             <div class="testimonio card h-100 text-center ">
               <img src="./img/usuarioTestimonio3.jpg" class="card-img-top rounded mx-auto position-relative"
                 alt="testimonio3">
-              <span class="icon ">👍</span>
+              <div class="div-icon">
+                <span class="icon ">👍</span>
+              </div>
               <div class="card-text testimonio-text">
                 <p>Lo utilizo para mantenerme despierto en reuniones de oficina
-                  interminables, el café es mi fiel compañero. Si no, estaría más perdido que pingüino en el desierto. 
+                  interminables, el café es mi fiel compañero. Si no, estaría más perdido que pingüino en el desierto.
                   ¡Comprá café y mantente despierto!</p>
               </div>
             </div>
@@ -343,6 +323,8 @@
         <div>
           <dl>
             <dt><a href="./pages/register.html">Registro</a></dt>
+            <dt><a href="./pages/login.html">Ingreso</a></dt>
+            <dt><a href="./pages/contacto.html">Contacto</a></dt>
           </dl>
         </div>
       </div>
@@ -385,7 +367,9 @@
           <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Somos la empresa <span class="textoImportante">Coffe's House</span> , y en esta ocasión presentamos una web e-commerce que ofrece una variedad de productos relacionados a la cafetería, así como tambien tazas y más proximamente!!</p>
+          <p>Somos la empresa <span class="textoImportante">Coffe's House</span> , y en esta ocasión presentamos una web
+            e-commerce que ofrece una variedad de productos relacionados a la cafetería, así como tambien tazas y más
+            proximamente!!</p>
         </div>
       </div>
     </div>
@@ -396,11 +380,40 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="preguntasFrecuentesLabel">Preguntas frecuentes</h5>
+          <h5 class="modal-title" id="preguntasFrecuentesLabel">Preguntas frecuentes (FAQ)</h5>
           <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Contenido de la ventana modal.
+          <ol>
+            <li>¿Cuáles son los métodos de pago aceptados?</li>
+            <p>Aceptamos tarjetas de crédito y débito (Visa, MasterCard, American Express), PayPal, PersonalPay, MercadoPago y
+              transferencias bancarias.</p>
+            <li>¿Hacen envíos a todo el país?</li>
+            <p>Sí, realizamos envíos a todas las provincias del país.</p>
+            <li>¿Cuánto cuesta el envío?</li>
+            <p>El costo del envío varía según la ubicación y el peso del pedido. Puedes calcular el costo exacto
+              en la página de carrito de compras antes de finalizar la compra.</p>
+            <li>¿Cuál es el tiempo estimado de entrega?</li>
+            <p>Los pedidos nacionales generalmente se entregan en un plazo de 3 a 7 días hábiles dependiendo del destino.</p>
+            <li>¿Puedo rastrear mi pedido?</li>
+            <p>Sí, una vez que tu pedido haya sido enviado, recibirás un correo electrónico con un número de
+              seguimiento y un enlace para rastrear tu paquete en tiempo real.</p>
+            <li>¿Ofrecen opciones de café orgánico?</li>
+            <p>Sí, tenemos una variedad de cafés orgánicos disponibles. Puedes encontrarlos en nuestra sección de
+              productos en la tienda.</p>
+            <li>¿Qué debo hacer si mi pedido llega dañado o incorrecto?</li>
+            <p>Si tu pedido llega dañado o incorrecto, debes contactarnos a través de mail. Proporciona tu número de pedido y una 
+              foto del producto dañado para que podamos resolver el problema lo antes posible.</p>
+            <li>¿Tienen políticas de devolución?</li>
+            <p>Sí, aceptamos devoluciones dentro de los 30 días posteriores a la compra. Los productos deben estar
+            sin abrir y en su estado original. Contáctanos para iniciar el proceso de devolución.</p>
+            <li>¿Ofrecen descuentos para compras al por mayor?</li>
+            <p>Sí, ofrecemos descuentos especiales para compras al por mayor. Por favor contáctanos con los
+              detalles de tu pedido y cantidades para recibir una cotización personalizada.</p>
+            <li>¿Cómo puedo contactarlos para más información?</li>
+            <p>Puedes contactarnos a través de nuestro formulario de contacto en la página web o haciendo click <a href="./pages/contacto.html">aquí</a>, por correo
+              electrónico a soporte@coffeehouse.com, o llamándonos al número de atención al cliente +0800 555 6666.</p>
+          </ol>
         </div>
       </div>
     </div>
@@ -415,12 +428,12 @@
           <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Para poder comprar se debe ir a los productos en la sección destacados y pulsar el botón 'comprar', o hacer click <a href="./pages/tienda.html">aquí</a></p>
+          <p>Para poder comprar se debe ir a los productos en la sección destacados y pulsar el botón 'comprar', o hacer
+            click <a href="./pages/tienda.html">aquí</a></p>
         </div>
       </div>
     </div>
   </div>
-
 
   <!-- Bootstrap JS y dependencias -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

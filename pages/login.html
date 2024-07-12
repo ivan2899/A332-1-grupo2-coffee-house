@@ -19,15 +19,17 @@
     <div class="contenido-principal">
         <div class="div-form">
 
-            <form action="" method="post">
+            <form action="" method="POST" id="form">
                 <h1>Iniciar sesión</h1>
                 <div class="input-ingreso">
-                    <input type="text" placeholder="Usuario" required>
-                    <i class='bx bxs-user'></i>
+                    <input type="email" id="email" placeholder="Email" autofocus>
+                    <i class='bx bxs-envelope'></i>
+                    <small></small>
                 </div>
                 <div class="input-ingreso">
-                    <input type="password" placeholder="Clave" required>
+                    <input type="password" id="password" placeholder="Clave">
                     <i class='bx bxs-lock-alt'></i>
+                    <small></small>
                 </div>
 
                 <div class="label-extra">
@@ -42,8 +44,29 @@
                 </div>
             </form>
 
+            <!-- Alerta de Éxito -->
+            <div id="successAlert" class="alert hidden success-alert">
+                <div class="alert-content">
+                    <h2>Exito</h2>
+                    <p>Login exitoso.</p>
+                    <button id="successAction">Aceptar</button>
+                </div>
+            </div>
+
+            <!-- Alerta de Error -->
+            <div id="errorAlert" class="alert hidden error-alert">
+                <div class="alert-content">
+                    <h2>Error</h2>
+                    <p>Hubo un problema con el login. Por favor, ingrese todos los campos.</p>
+                    <button id="errorAction">Aceptar</button>
+                </div>
+            </div>
+
         </div>
     </div>
+
+
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
