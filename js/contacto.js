@@ -13,17 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const isValid = checkInputs();
 
         if (isValid) {
-            const email = document.querySelector('#email').value
-            const password = document.querySelector('#password').value
-            const Users = JSON.parse(localStorage.getItem('users')) || []
-            const validUser = Users.find(user => user.email === email && user.password === password)
-            if (!validUser) {
-                return alert("usuario incorrecto");
-            }
-            alert(`bienvenido ${validUser.name} a Coffe's House`)
             showAlert(successAlert);
             setTimeout(function() {
-                window.location.href = './tienda.html';
+                window.location.href = '../index.html';
             }, 3000);
         } else {
             showAlert(errorAlert);
@@ -51,7 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function checkInputs() {
         let isValid = true; // Cambiado a true inicialmente
         const emailValue = document.getElementById('email').value.trim();
-        const passwordValue = document.getElementById('password').value.trim();
+        const asuntoValue = document.getElementById('asunto').value.trim();
+        const mensajeValue = document.getElementById('mensaje').value.trim();
 
         if (emailValue === '') {
             setErrorFor(document.getElementById('email'), 'Debe ingresar email');
@@ -63,28 +56,33 @@ document.addEventListener('DOMContentLoaded', function () {
             setSuccessFor(document.getElementById('email'));
         }
 
-        if (passwordValue === '') {
-            setErrorFor(document.getElementById('password'), 'Debe ingresar una clave');
+        if (asuntoValue === '') {
+            setErrorFor(document.getElementById('asunto'), 'Debe ingresar asunto');
             isValid = false;
         } else {
-            setSuccessFor(document.getElementById('password'));
+            setSuccessFor(document.getElementById('asunto'));
         }
 
-
+        if (mensajeValue === '') {
+            setErrorFor(document.getElementById('mensaje'), 'Debe ingresar mensaje');
+            isValid = false;
+        } else {
+            setSuccessFor(document.getElementById('mensaje'));
+        }
 
         return isValid;
     }
 
     function setErrorFor(input, message) {
         const formControl = input.parentElement;
+        formControl.className = 'form__section error'; // Aplica la clase 'error' al contenedor
         const small = formControl.querySelector('small');
-        formControl.className = 'input-ingreso error'; // Aplica la clase 'error' al contenedor
         small.innerText = message;
     }
 
     function setSuccessFor(input) {
         const formControl = input.parentElement;
-        formControl.className = 'input-ingreso success'; // Aplica la clase 'success' al contenedor
+        formControl.className = 'form__section success'; // Aplica la clase 'success' al contenedor
     }
 
     function isEmail(email) {

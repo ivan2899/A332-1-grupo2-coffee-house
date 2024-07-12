@@ -48,7 +48,6 @@
         <li><a href="#porqueelegirnos">¿Por qué elegirnos?</a></li>
         <li><a href="#redes">Redes</a></li>
         <li><a href="./pages/login.html">Iniciar sesión</a></li>
-        
       </ul>
 
       <!-- Nav Pc  ||  ancho > 1110px-->
@@ -151,16 +150,6 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12 mb-4 ">
             <div class="card m-auto mt-5">
-              <img src="./img/cards/group-1/eb-espresso.jpg" class="card-img-top" alt="Earlybird Espresso">
-              <div class="card-body">
-                <h5 class="card-title">Earlybird Espresso</h5>
-                <p class="card-text">Aromas agradables y sabores intensos.</p>
-                <a href="./pages/tienda.html" class="btn btn-primary btn-hover">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4 ">
-            <div class="card m-auto mt-5">
               <img src="./img/cards/group-2/bs-blankblend.webp" class="card-img-top" alt="Blank Street">
               <div class="card-body">
                 <h5 class="card-title">Blank Street</h5>
@@ -174,19 +163,7 @@
               <img src="./img/cards/group-2/flora-granos.jpg" class="card-img-top" alt="flora-granos">
               <div class="card-body">
                 <h5 class="card-title">Flora Alba</h5>
-                <p class="card-text">Granos de Arabia, textura suave.</p>
-                <a href="./pages/tienda.html" class="btn btn-primary btn-hover">Comprar</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4 ">
-            <div class="card m-auto mt-5">
-              <img src="./img/cards/group-1/bc-decaf.jpg" class="card-img-top" alt="Battlecreek Decaf">
-              <div class="card-body">
-                <h5 class="card-title">Battlecreek Decaf</h5>
-                <p class="card-text">Sabores traidos de Colombia, descafeinado.</p>
+                <p class="card-text">Granos de Arabia, textura suave y rica.</p>
                 <a href="./pages/tienda.html" class="btn btn-primary btn-hover">Comprar</a>
               </div>
             </div>
@@ -283,10 +260,9 @@
             <div class="testimonio card h-100 text-center ">
               <img src="./img/usuarioTestimonio1.jpg" class="card-img-top rounded mx-auto position-relative"
                 alt="testimonio1">
-                <div class="div-icon">
-                  <span class="icon ">👍</span>
-
-                </div>
+              <div class="div-icon">
+                <span class="icon ">👍</span>
+              </div>
               <div class="testimonio-text">
                 <p>"Desde el momento en que el aroma del café recién hecho llega a mi nariz, hasta el primer sorbo que
                   acaricia mi paladar, cada taza es una experiencia única y reconfortante. Recomiendo!! 💯💯"</p>
@@ -310,7 +286,9 @@
             <div class="testimonio card h-100 text-center ">
               <img src="./img/usuarioTestimonio3.jpg" class="card-img-top rounded mx-auto position-relative"
                 alt="testimonio3">
-              <span class="icon ">👍</span>
+              <div class="div-icon">
+                <span class="icon ">👍</span>
+              </div>
               <div class="card-text testimonio-text">
                 <p>Lo utilizo para mantenerme despierto en reuniones de oficina
                   interminables, el café es mi fiel compañero. Si no, estaría más perdido que pingüino en el desierto.
@@ -345,6 +323,8 @@
         <div>
           <dl>
             <dt><a href="./pages/register.html">Registro</a></dt>
+            <dt><a href="./pages/login.html">Ingreso</a></dt>
+            <dt><a href="./pages/contacto.html">Contacto</a></dt>
           </dl>
         </div>
       </div>
@@ -400,11 +380,40 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="preguntasFrecuentesLabel">Preguntas frecuentes</h5>
+          <h5 class="modal-title" id="preguntasFrecuentesLabel">Preguntas frecuentes (FAQ)</h5>
           <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Contenido de la ventana modal.
+          <ol>
+            <li>¿Cuáles son los métodos de pago aceptados?</li>
+            <p>Aceptamos tarjetas de crédito y débito (Visa, MasterCard, American Express), PayPal, PersonalPay, MercadoPago y
+              transferencias bancarias.</p>
+            <li>¿Hacen envíos a todo el país?</li>
+            <p>Sí, realizamos envíos a todas las provincias del país.</p>
+            <li>¿Cuánto cuesta el envío?</li>
+            <p>El costo del envío varía según la ubicación y el peso del pedido. Puedes calcular el costo exacto
+              en la página de carrito de compras antes de finalizar la compra.</p>
+            <li>¿Cuál es el tiempo estimado de entrega?</li>
+            <p>Los pedidos nacionales generalmente se entregan en un plazo de 3 a 7 días hábiles dependiendo del destino.</p>
+            <li>¿Puedo rastrear mi pedido?</li>
+            <p>Sí, una vez que tu pedido haya sido enviado, recibirás un correo electrónico con un número de
+              seguimiento y un enlace para rastrear tu paquete en tiempo real.</p>
+            <li>¿Ofrecen opciones de café orgánico?</li>
+            <p>Sí, tenemos una variedad de cafés orgánicos disponibles. Puedes encontrarlos en nuestra sección de
+              productos en la tienda.</p>
+            <li>¿Qué debo hacer si mi pedido llega dañado o incorrecto?</li>
+            <p>Si tu pedido llega dañado o incorrecto, debes contactarnos a través de mail. Proporciona tu número de pedido y una 
+              foto del producto dañado para que podamos resolver el problema lo antes posible.</p>
+            <li>¿Tienen políticas de devolución?</li>
+            <p>Sí, aceptamos devoluciones dentro de los 30 días posteriores a la compra. Los productos deben estar
+            sin abrir y en su estado original. Contáctanos para iniciar el proceso de devolución.</p>
+            <li>¿Ofrecen descuentos para compras al por mayor?</li>
+            <p>Sí, ofrecemos descuentos especiales para compras al por mayor. Por favor contáctanos con los
+              detalles de tu pedido y cantidades para recibir una cotización personalizada.</p>
+            <li>¿Cómo puedo contactarlos para más información?</li>
+            <p>Puedes contactarnos a través de nuestro formulario de contacto en la página web o haciendo click <a href="./pages/contacto.html">aquí</a>, por correo
+              electrónico a soporte@coffeehouse.com, o llamándonos al número de atención al cliente +0800 555 6666.</p>
+          </ol>
         </div>
       </div>
     </div>

@@ -29,6 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
             Users.push({ name: name, email: email, password: password });
             localStorage.setItem('users', JSON.stringify(Users))
             showAlert(successAlert);
+            setTimeout(function() {
+                window.location.href = './login.html';
+            }, 3000);
         } else {
             showAlert(errorAlert);
         }
@@ -43,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     successActionButton.addEventListener('click', function () {
         successAlert.classList.add('hidden');
-        window.location.href = './login.html'
     });
 
     errorActionButton.addEventListener('click', function () {
