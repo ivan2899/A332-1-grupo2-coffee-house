@@ -2,7 +2,7 @@
     --color_fondo: #333c3b;
     --color_marron_fuerte: #43332e;
     --color_letras: #C5D1EB;
-    --color_letras_titulo: #414141;
+    --color_letras_titulo: #d7d7d7;
     --altura_header: 60px;
     --color_separador: #7c7b7ba1;
     --color_separador_slidebar: #0a0a0a;
@@ -36,6 +36,7 @@ body.dark-mode {
     --color_fondo: #ffffff9e;
     --color_marron_fuerte: #5e4c46;
     --color_letras: #DFD3C3  ;
+    --color_letras_titulo: #414141;
 }
 
 h2 {
