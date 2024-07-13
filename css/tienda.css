@@ -107,9 +107,9 @@ body.dark-mode .moon-icon {
 
 .modal-content {
     top: 70px;
-    background-color: var(--color_fondo);
-    color: #FFFFFF70;
-    border: 1px solid var(--color_beige);
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #333c3b;
 }
 
 .modal-header {
@@ -120,14 +120,11 @@ body.dark-mode .moon-icon {
     border-bottom: none;
     /* Eliminar cualquier borde inferior del encabezado */
 }
-
 .modal-header .modal-title {
     text-align: center;
     width: 50%;
-    /* Ajustar el ancho del borde inferior */
     border-bottom: 3px solid var(--color_beige);
-    /* Añadir el borde inferior */
-    color: var(--color_letras);
+    color: #333c3b;
 }
 
 .modal-header .btn-close {
