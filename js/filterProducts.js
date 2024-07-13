@@ -108,3 +108,4 @@ function filterProducts()
     e.preventDefault();
     resetFilters();
   });
+  

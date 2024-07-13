@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('form');
     const successAlert = document.getElementById('successAlert');
     const errorAlert = document.getElementById('errorAlert');
     const closeButtons = document.querySelectorAll('.alert-close');
@@ -46,6 +45,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function showAlert(alertElement) {
         alertElement.classList.remove('hidden');
+
+        if (alertElement.id === 'errorAlert') {
+            alertElement.classList.add('vibrate');
+
+            setTimeout(() => {
+                alertElement.classList.remove('vibrate');
+            }, 500);
+        }
     }
 
     function checkInputs() {

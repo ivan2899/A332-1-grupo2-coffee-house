@@ -59,6 +59,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function showAlert(alertElement) {
         alertElement.classList.remove('hidden');
+
+        // Si es una alerta de error, agrega la clase de vibración
+        if (alertElement.id === 'errorAlert') {
+            alertElement.classList.add('vibrate');
+
+            setTimeout(() => {
+                alertElement.classList.remove('vibrate');
+            }, 500);
+        }
     }
 
     function checkInputs() {
@@ -136,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function setSuccessForTerms() {
         const termsError = document.getElementById('terms-error');
         termsError.classList.remove('terminos'); // Elimina la clase 'terminos' si no hay error
-        termsError.classList.add('hidden'); // Asegúrate de ocultar el mensaje de éxito si es necesario
+        termsError.classList.add('hidden');
     }
 
 

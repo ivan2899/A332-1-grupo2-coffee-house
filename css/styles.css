@@ -1,7 +1,8 @@
 :root {
     --color_fondo: #333c3b;
     --color_marron_fuerte: #43332e;
-    --color_letras: #d5d5d5;
+    --color_letras: #C5D1EB;
+    --color_letras_titulo: #414141;
     --altura_header: 60px;
     --color_separador: #7c7b7ba1;
     --color_separador_slidebar: #0a0a0a;
@@ -34,7 +35,7 @@ body {
 body.dark-mode {
     --color_fondo: #ffffff9e;
     --color_marron_fuerte: #5e4c46;
-    --color_letras: #000;
+    --color_letras: #DFD3C3  ;
 }
 
 h2 {
@@ -349,7 +350,7 @@ body.dark-mode .moon-icon {
 }
 
 .card-title {
-    color: var(--color_letras);
+    color: var(--color_letras_titulo);
     font-weight: bold;
     text-align: left;
     font-size: 1.4em;
@@ -418,7 +419,7 @@ body.dark-mode .moon-icon {
 .titulo-header h2 {
     font-size: 1.8em;
     font-weight: bold;
-    color: var(--color_letras);
+    color: var(--color_letras_titulo);
     font-style: italic;
     letter-spacing: 1px;
     position: relative;
