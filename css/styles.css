@@ -352,9 +352,10 @@ body.dark-mode .moon-icon {
     color: var(--color_letras);
     font-weight: bold;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.4em;
     background-color: var(--color_beige);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-bottom: 5px;
 }
 
 .card-text {
@@ -365,8 +366,8 @@ body.dark-mode .moon-icon {
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.btn-primary {
 
+.btn-primary {
     background-color: #333c3b;
     border: none;
 }
