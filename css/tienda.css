@@ -609,9 +609,37 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
 }
 
 /* ====== Fin Footer ====== */
+/* ====== Api ====== */
+.contenedor-boton-api{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-boton-api .btn {
+    width: 25%;
+    background-color: #cecfd0;
+    border-color: #cecfd0;
+    color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.contenedor-boton-api .btn:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+}
+
+.contenedor-boton-api .btn:focus,
+.btn:active {
+    box-shadow: none;
+}
 
 
 
+/* ====== fin api ====== */
 
 
 /* ====== Animaciones ====== */
