@@ -532,7 +532,8 @@ body.dark-mode .moon-icon {
 
 
 .titulo-header2 {
-    height: 100px;
+    height: 5px;
+    padding-top: 30px;
 }
 
 .titulo-header {
