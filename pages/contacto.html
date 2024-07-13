@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" type="text/css" href="../css/contacto.css">
+    <!-- Icono -->
+    <link rel="icon" type="image/ico" href="../img/favicon.ico">
+    <!-- Titulo de la Web -->
+    <title>Coffee's House</title>
+
+</head>
+
+<body>
+    <div class="form__consulta centrar" style="margin: 0;">
+
+        <div class="flex-container">
+            <form class="form">
+                <div class="form__section">
+                    <input type="email" id="email" class="form__input" placeholder="Email">
+                    <small></small>
+                </div>
+                <div class="form__section">
+                    <input type="text" id="asunto" class="form__input" placeholder="Asunto">
+                    <small></small>
+                </div>
+                <div class="form__section">
+                    <textarea class="form__input" id="mensaje" placeholder="Escriba su mensaje"></textarea>
+                    <small></small>
+                </div>
+                <div class="form__section">
+                    <input type="submit" class="form__input btn">
+                </div>
+            </form>
+            <div class="form-img">
+                <img src="https://www.pngplay.com/wp-content/uploads/6/Email-Icon-Transparent-Background.png">
+            </div>
+        </div>
+
+        <!-- Alerta de Éxito -->
+        <div id="successAlert" class="alert hidden success-alert">
+            <div class="alert-content">
+                <h2>Exito</h2>
+                <p>Mail enviado de forma exitosa.</p>
+                <button id="successAction">Aceptar</button>
+            </div>
+        </div>
+
+        <!-- Alerta de Error -->
+        <div id="errorAlert" class="alert hidden error-alert">
+            <div class="alert-content">
+                <h2>Error</h2>
+                <p>Ocurrió un error enviando el form, verifique lo que ingresó.</p>
+                <button id="errorAction">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/contacto.js"></script>
+</body>
+
+</html>

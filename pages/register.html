@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="../css/loginResgister.css">
+    <!-- Icono -->
+    <link rel="icon" type="image/ico" href="../img/favicon.ico">
+    <!-- Titulo de la Web -->
+    <title>Coffee's house</title>
+
+</head>
+
+<body>
+    <div class="contenido-principal">
+        <div class="div-form">
+
+            <form action="" method="post" id="form">
+                <h1>Registrarse</h1>
+                <div class="input-ingreso">
+                    <input type="email" id="email" placeholder="Email" autofocus>
+                    <i class='bx bxs-envelope'></i>
+                    <small></small>
+                </div>
+                <div class="input-ingreso">
+                    <input type="text" id="username" placeholder="Usuario">
+                    <i class='bx bxs-user'></i>
+                    <small></small>
+                </div>
+                <div class="input-ingreso">
+                    <input type="password" id="password" placeholder="Clave">
+                    <i class='bx bxs-lock-alt'></i>
+                    <small></small>
+                </div>
+                <div class="input-ingreso">
+                    <input type="password" id="password-confirm" placeholder="Confirmar clave">
+                    <i class='bx bxs-lock-alt'></i>
+                    <small></small>
+                </div>
+
+                <div class="label-extra">
+                    <label for="terms"><input type="checkbox" name="" id="terms">Acepto los terminos y
+                        condiciones</label>
+                </div>
+                <div id="terms-error" class="terminos">
+                    <small></small>
+                </div>
+
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+
+            <!-- Alerta de Éxito -->
+            <div id="successAlert" class="alert hidden success-alert">
+                <div class="alert-content">
+                    <h2>Exito</h2>
+                    <p>Registro completado exitosamente.</p>
+                    <button id="successAction">Aceptar</button>
+                </div>
+            </div>
+
+            <!-- Alerta de Error -->
+            <div id="errorAlert" class="alert hidden error-alert">
+                <div class="alert-content">
+                    <h2>Error</h2>
+                    <p>Hubo un problema con el registro. Por favor, inténtelo de nuevo.</p>
+                    <button id="errorAction">Aceptar</button>
+                </div>
+            </div>
+
+            <!-- Alerta de Error, usuario registrado -->
+            <div id="warningAlert" class="alert hidden warning-alert">
+                <div class="alert-content">
+                    <h2>Error</h2>
+                    <p>Ya existe un usuario registrado con ese mail. Por favor, intente con otro.</p>
+                    <button id="warningAction">Aceptar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/register.js"></script>
+
+</body>
+
+</html>

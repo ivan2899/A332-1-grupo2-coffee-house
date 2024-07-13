@@ -1,0 +1,37 @@
+extra/
+
+
+#pages/div.css
+#pages/pruebaDiv.html
+
+
+animacion a un titulo
+/* .encabezado-destacados.animar {
+    animation: fadeInUp 2s ease-in-out forwards;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+// document.addEventListener('DOMContentLoaded', function() {
+    //     let observador = new IntersectionObserver((entradas, observador) => {
+    //         entradas.forEach(entrada => {
+    //             if (entrada.isIntersecting) {
+    //                 entrada.target.classList.add('animar');
+    //                 observador.unobserve(entrada.target);
+    //             }
+    //         });
+    //     }, { threshold: 0.1 });
+    
+    //     document.querySelectorAll('.encabezado-destacados').forEach(seccion => {
+    //         observador.observe(seccion);
+    //     });
+    // });
+    
