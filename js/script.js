@@ -66,3 +66,61 @@ document.getElementById('mode-switch').addEventListener('click', function (event
     event.preventDefault();
     document.getElementById('switch').click();
 });
+/* ====== Animacion productos destacados====== */
+
+
+
+function moverX(){
+    let tamanioX = 0;
+    let tamanioY = 0;
+    const lineX = document.getElementById('line-x-hover');
+    const lineY = document.getElementById('line-y-hover');
+    const lineXBottom = document.getElementById('line-x-hover-bottom');
+    const lineYRight = document.getElementById('line-y-hover-right');
+
+    const tiempoY = setInterval(move, 10);
+    const incrementoX = 2; 
+    const incrementoY = (90 / (120 / incrementoX));
+
+    function move() {
+        
+        if (tamanioY >= 90 && tamanioX >= 120) {
+            clearInterval(tiempoY);
+        } else {
+            if (tamanioX < 120) {
+                tamanioX += incrementoX;
+                lineX.style.width = tamanioX + '%';
+                lineXBottom.style.width = tamanioX + '%';
+            }
+            if(tamanioY < 85){
+                tamanioY += incrementoY;
+                lineYRight.style.height = tamanioY + '%';
+                lineY.style.height = tamanioY + '%';
+            }
+        }
+    }
+}
+function reiniciarMovimiento() {
+
+    const lineX = document.getElementById('line-x-hover');
+    const lineY = document.getElementById('line-y-hover');
+    const lineXBottom = document.getElementById('line-x-hover-bottom');
+    const lineYRight = document.getElementById('line-y-hover-right');
+
+    clearTimeout(lineX.timeoutId); 
+    lineX.timeoutId = setTimeout(() => {
+        lineX.style.width = '0%';
+        lineXBottom.style.width = '0%';
+        lineY.style.height = '0%';
+        lineYRight.style.height = '0%';
+    }, 1000);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var producto2 = document.getElementById('contenedor-2-text');
+    
+    producto2.addEventListener('mouseenter', moverX); 
+    producto2.addEventListener('mouseleave', reiniciarMovimiento);
+});
+
+/* ====== Fin animacion productos destacados====== */

@@ -132,11 +132,6 @@ h2 {
     box-shadow: .1rem .2rem .3rem #333;
 }
 
-.scroll{
-    background-color: var(--color_marron_fuerte);
-    box-shadow: .1rem .2rem .3rem #333;
-}
-
 nav ul {
     width: 100%;
     list-style: none;
@@ -310,10 +305,141 @@ body.dark-mode .moon-icon {
 
 /* ====== Fin Nav ====== */
 
+/* ====== Contenido desctacados ====== */
+.contenedor-fijo{
+    width: 100%;
+    padding: 0;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.producto-1, .producto-2{
+    top: 0;
+    margin: 10px 0;
+    /* width: 100%; */
+    height: 50%;
+    padding: 0;    
+    background-color: var(--color_marron_fuerte);
+}
+.producto1-img-contenedor {
+    
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("../img/destacados/cafe-humeante.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.producto1-body-contenedor, .producto2-body-contenedor{
+    position: relative;
+    box-sizing: border-box;
+    padding: 20% 4%;
+    margin: 0 10%;
+    overflow: hidden;
+    background-color: transparent;
+}
+.producto2-body-contenedor{
+    overflow: visible;
+}
+.producto1-text, .producto2-text{
+    top:0;
+    overflow: hidden;
+    position: relative;
+    align-content: inherit;
+    font-size: 14px;
+}
+.producto1-text{
+    text-align:justify;
+}
+.producto1-text, .producto2-text p{
+    color:var(--color_letras);
+}
+
+.encabezado-destacados {
+    font-family: var(--letra_important);
+    color: var(--color_beige);
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
 
 
+.producto2-img-contenedor {
+    
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("../img/destacados/battlecreek-coffee-roasters.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 
 
+#line-x-hover #line-x-hover-bottom{
+    width: 0%;
+    height: 4px;
+    background-color: var(--color_beige);
+    position: absolute;
+
+}
+#line-x-hover-bottom, #line-x-hover{
+    width: 0%;
+    height: 4px;
+    background-color: var(--color_beige);
+    position: absolute;
+
+}
+#line-x-hover-bottom{
+    bottom: 10%;
+    right: -10%;
+
+}
+#line-x-hover{
+    top: 10%;
+    left: -10%;
+
+}
+#line-y-hover, #line-y-hover-right{
+    width: 4px;
+    height: 0%;
+    background-color: var(--color_beige);
+    position: absolute;
+    
+    top: 7%;
+}
+
+#line-y-hover-right{
+    right: -7%;
+}
+
+#line-y-hover{
+    left: -7%;
+}
+
+.producto2-text .btn {
+    width: 30%;
+    background-color: transparent;
+    border-color: #cecfd0;
+    color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.producto2-text .btn:hover {
+    background-color: var(--color_beige);
+    border-color: var(--color_letras);
+}
+
+.producto2-text .btn:focus,
+.producto2-text .btn:active {
+    box-shadow: none;
+}
+
+
+/* ====== Fin Contenido desctacados ====== */
 
 /* ====== Contenido Principal ====== */
 /*Estilos cards*/
@@ -764,6 +890,10 @@ body.dark-mode .moon-icon {
         text-align: center;
         margin-bottom: 5px;
     }
+    .producto1-img-contenedor, .producto2-img-contenedor{
+
+        min-height: 500px;
+    }
 }
 
 /*tablets, Ipads*/
@@ -787,6 +917,10 @@ body.dark-mode .moon-icon {
 
     .carousel-caption p {
         font-size: 0.8em;
+    }
+    .producto1-img-contenedor, .producto2-img-contenedor{
+
+        min-height: 450px;
     }
 
 }
@@ -824,7 +958,10 @@ body.dark-mode .moon-icon {
         margin-top: 5px;
         width: 90%;
     }
-
+    .producto1-img-contenedor, .producto2-img-contenedor {
+    
+        min-height: 300px;
+    }
 }
 
 /* ====== Fin Responsive ====== */
