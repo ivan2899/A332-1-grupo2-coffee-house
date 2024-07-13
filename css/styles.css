@@ -439,25 +439,31 @@ body.dark-mode .moon-icon {
     border-radius: 5px;
 
     position: absolute;
-    top: 70%;
-    transform: translateY(-50%);
+    top: 60%;
+    transform: translateY(-60%);
     text-align: center;
 }
 
 .carousel-caption h5,
+.carousel-caption h1,
 .carousel-caption p {
     background-color: transparent;
-    color: var(--color_letras);
+    color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
+.carousel-caption h1{
+    font-size: 6em;
+    margin-bottom: 3rem;
+}
+
 .carousel-caption h5 {
-    font-size: 2.2em;
-    margin-bottom: 10px;
+    font-size: 3.2em;
+    margin-bottom: 1rem;
 }
 
 .carousel-caption p {
-    font-size: 1.2em;/
+    font-size: 2.1em;
 }
 
 .carousel-indicators {
@@ -769,6 +775,10 @@ body.dark-mode .moon-icon {
         font-size: 1.8em;
     }
 
+    .carousel-caption h1{
+        font-size: 2.6em;
+    }
+
     .carousel-caption h5 {
         font-size: 1em;
     }
@@ -792,8 +802,11 @@ body.dark-mode .moon-icon {
 
     .carousel-caption {
         top: 50%;
-        transform: translateY(-10%);
+        transform: translateY(-30%);
+    }
 
+    .carousel-caption h1{
+        font-size: 2em;
     }
 
     .carousel-caption h5 {
@@ -802,6 +815,7 @@ body.dark-mode .moon-icon {
 
     .carousel-caption p {
         font-size: 0.6em;
+        transform: translateY(-15%);
     }
 
     .sidebar {
