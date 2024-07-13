@@ -1,11 +1,16 @@
 :root {
     --color_fondo: #333c3b;
     --color_marron_fuerte: #43332e;
+    --color_letras_titulo: #414141;
     --color_letras: #d5d5d5;
     --altura_header: 60px;
     --color_separador: #7c7b7ba1;
     --color_separador_slidebar: #0a0a0a;
     --color_beige: #bc9960;
+    --letra_important: "Sedan SC", serif;
+    --letra_contenido: "Atkinson Hyperlegible", sans-serif;
+    --letra_logo: "Playwrite NL", cursive;
+    --tamanio_letra_contenido: 16px;
 }
 
 * {
@@ -21,20 +26,89 @@ body {
     font-size: 20px;
 }
 
+body.dark-mode {
+    --color_fondo: #ffffff9e;
+    --color_marron_fuerte: #5e4c46;
+    --color_letras: #DFD3C3  ;
+}
+
 /* ====== Nav ====== */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    background-color: #000;
+    border: none;
+    border-radius: 34px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 34px;
+    position: relative;
+    width: 60px;
+    margin: 8px 20px;
+    padding: 0 5px;
+    transition: background-color 0.4s;
+}
+
+.icon {
+    color: #ffffff;
+    font-size: 20px !important;
+}
+
+.sun-icon {
+    display: none;
+    left: 0;
+    top: 0;
+}
+
+.moon-icon {
+    position: inherit;
+    display: block;
+    right: -28px;
+    top: 0;
+}
+
+.slider {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    left: -10px;
+    position: absolute;
+    transition: transform 0.4s;
+    z-index: 1;
+}
+
+body.dark-mode .switch {
+    background-color: orange;
+}
+
+body.dark-mode .sun-icon {
+    display: block;
+}
+
+body.dark-mode .moon-icon {
+    display: none;
+}
+
 .header {
     position: sticky;
     top: 25px;
     margin: 0 15px 25px 0;
     z-index: 1000;
     border-radius: 32px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 .nav-sup {
     background-color: var(--color_marron_fuerte);
     box-shadow: 5px 5px 18px rgba(0, 0, 0, .8);
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 nav ul {
@@ -60,7 +134,7 @@ nav ul {
 
 .nav-sup a:hover {
     background-color: #f0f0f0;
-    border-radius: 50px;
+    border-radius: 10px;
     color: #000;
 }
 
@@ -303,23 +377,23 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     height: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #bc9960;
+    background-color: var(--color_beige);
 }
 
 .card-title {
-    color: white;
+    color: var(--color_letras_titulo);
     font-weight: bold;
     text-align: left;
     font-size: 1.2em;
-    background-color: #bc9960;
+    background-color: var(--color_beige);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .card-text {
-    color: white;
+    color: var(--color_letras);
     font-size: 0.8em;
     font-style: italic;
-    background-color: #bc9960;
+    background-color: var(--color_beige);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
@@ -354,6 +428,48 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
     animation: pulse 1s normal;
 }
 
+.badge {
+    padding: 0.5em 0.6em;
+    font-size: 0.75em;
+}
+
+#cartItemCount{
+    position: absolute;
+    right: 12px;
+    top: 30px;
+    background-color: #ff000084;
+    padding: 2px 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #cdcdcd;
+    margin: 0 30px;
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333c3b;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.btn-sm{
+    background: none;
+    border: none;
+    color: #4e4ed1;
+    font-weight: 600;
+}
+.me-3{
+    cursor: pointer;
+}
+.icon-cart{
+    width: 30px;
+    margin-left: 0;
+    stroke: #000;
+}
 /* ====== Fin Contenido Principal ====== */
 
 
@@ -461,6 +577,19 @@ input[type="checkbox"]:checked+.nav-sup .sidebar {
         transform: translateX(-50%) scale(1);
     }
 }
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(5px, 0); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(0); }
+}
+
+.vibrate {
+    animation: shake 0.5s ease;
+}
+
 
 /* ====== Fin Animaciones ====== */
 

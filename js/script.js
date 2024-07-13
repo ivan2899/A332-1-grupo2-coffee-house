@@ -60,6 +60,8 @@ switchButton.addEventListener('click', function () {
     localStorage.setItem('theme', theme);
 });
 
+// No va a la referencia del 'a'
+
 document.getElementById('mode-switch').addEventListener('click', function (event) {
     event.preventDefault();
     document.getElementById('switch').click();

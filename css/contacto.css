@@ -229,12 +229,17 @@ body {
 /* Media queries para asegurar la responsividad */
 @media (max-width: 768px) {
     .flex-container {
+        position: absolute;
         flex-direction: column;
+        width: 80vw;
+        height: 100%;
+        margin: 10px;
     }
 
     .form, .form-img {
         width: 100%;
         max-width: 100%;
+        padding: 0;
     }
 
     .form__input {
