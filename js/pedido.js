@@ -46,5 +46,12 @@ document.getElementById('submitOrder').addEventListener('click', function () {
             modalContent.classList.remove('vibrate');
         }, 500);
     }
+   
+ $('.modal').on('shown.bs.modal', function () {
+        $('body').addClass('no-scroll');
+    });
     
+    $('.modal').on('hidden.bs.modal', function () {
+        $('body').removeClass('no-scroll');
+    }); 
 });
