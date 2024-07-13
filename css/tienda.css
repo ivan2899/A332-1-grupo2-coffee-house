@@ -105,6 +105,49 @@ body.dark-mode .moon-icon {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+.modal-content {
+    top: 70px;
+    background-color: var(--color_fondo);
+    color: #FFFFFF70;
+    border: 1px solid var(--color_beige);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: none;
+    /* Eliminar cualquier borde inferior del encabezado */
+}
+
+.modal-header .modal-title {
+    text-align: center;
+    width: 50%;
+    /* Ajustar el ancho del borde inferior */
+    border-bottom: 3px solid var(--color_beige);
+    /* Añadir el borde inferior */
+    color: var(--color_letras);
+}
+
+.modal-header .btn-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: #fff;
+    /* Cambiar el color del botón de cierre */
+    opacity: 1;
+}
+
+.modal-body li{
+    color: #000000;
+    font-style: italic;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
 .nav-sup {
     background-color: var(--color_marron_fuerte);
     box-shadow: 5px 5px 18px rgba(0, 0, 0, .8);
